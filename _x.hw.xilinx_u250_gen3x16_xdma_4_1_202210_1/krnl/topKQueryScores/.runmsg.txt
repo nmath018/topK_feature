@@ -1,2 +1,0 @@
-performing high-level synthesis for kernel: topKQueryScores
-Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/vitis_hls.log

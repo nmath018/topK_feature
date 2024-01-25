@@ -1,2 +1,0 @@
-Compiling (synthesis checkpoint) kernel/IP: ulp_ip_psr_aresetn_ctrl_slr0_0
-Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_ip_psr_aresetn_ctrl_slr0_0_synth_1/runme.log

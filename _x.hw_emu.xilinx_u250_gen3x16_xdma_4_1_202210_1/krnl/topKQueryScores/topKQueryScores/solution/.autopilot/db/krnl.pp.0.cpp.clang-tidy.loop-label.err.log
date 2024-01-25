@@ -1,4 +1,0 @@
-3 warnings and 26 errors generated.
-Error while processing /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.autopilot/db/krnl.pp.0.cpp.
-clang-tidy applied 134 of 134 suggested fixes.
-Suppressed 3 warnings (3 with check filters).
