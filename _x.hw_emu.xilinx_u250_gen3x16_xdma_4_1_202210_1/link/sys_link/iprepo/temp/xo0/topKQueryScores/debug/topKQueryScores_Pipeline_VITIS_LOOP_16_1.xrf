@@ -1,0 +1,90 @@
+Begin Function 'topKQueryScores_Pipeline_VITIS_LOOP_16_1'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_1
+local i_1 <load_16> <integer> <> 'load' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:16>
+i /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:16
+reg: i_1_reg_481[7:0] lv
+
+local icmp_ln16 <icmp_16> <integer> <Comparator> 'icmp' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:16>
+icmp_ln16 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:16
+reg: icmp_ln16_reg_487[0:0] lv
+
+local add_ln19 <add_19> <integer> <Arithmetic> 'add' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+add_ln19 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: add_ln19_reg_491[63:0] lv
+
+local trunc_ln19_3 <partselect_19> <integer> <> 'partselect' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+trunc_ln19_3 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: trunc_ln19_3_reg_497[60:0] lv
+
+# ST_73
+local gmem_addr_1_read <read_19> <integer> <> 'read' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+gmem_addr_1_read /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: gmem_addr_1_read_reg_540[63:0] lv
+
+# ST_82
+local mul_2 <dmul_19> <double> <MultiCycle> 'dmul' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+mul_2 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: mul_2_reg_570[63:0] lv
+
+# ST_88
+local product_1 <dadd_19> <double> <MultiCycle> 'dadd' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+product_1 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: product_1_reg_575[63:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage1)
+# ST_2
+local trunc_ln19_6 <partselect_19> <integer> <> 'partselect' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+trunc_ln19_6 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: trunc_ln19_6_reg_508[60:0] lv
+
+local trunc_ln19_9 <partselect_19> <integer> <> 'partselect' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+trunc_ln19_9 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: trunc_ln19_9_reg_513[60:0] lv
+
+# ST_74
+local gmem_addr_2_read <read_19> <integer> <> 'read' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+gmem_addr_2_read /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: gmem_addr_2_read_reg_550[63:0] lv
+
+# ST_80
+local mul <dmul_19> <double> <MultiCycle> 'dmul' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+mul /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: mul_reg_560[63:0] lv
+
+# ST_104
+local product_1_2 <dadd_19> <double> <MultiCycle> 'dadd' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+product_1_2 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: product_1_2_reg_585[63:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage2)
+# ST_72
+local gmem_addr_read <read_19> <integer> <> 'read' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+gmem_addr_read /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: gmem_addr_read_reg_530[63:0] lv
+
+# ST_81
+local mul_1 <dmul_19> <double> <MultiCycle> 'dmul' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+mul_1 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: mul_1_reg_565[63:0] lv
+
+# ST_96
+local product_1_1 <dadd_19> <double> <MultiCycle> 'dadd' </home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19>
+product_1_1 /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19
+reg: product_1_1_reg_580[63:0] lv
+
+# ST_105
+local p_Result_s <> <integer> <> 'bitselect' <>
+__Result__ /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/include/header_files/ap_int_ref.h:779
+reg: p_Result_s_reg_590[0:0] lv
+
+local val <> <integer> <> 'select' <>
+val /wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/include/header_files/ap_fixed_base.h:1513
+reg: val_reg_595[31:0] lv
+
+
+End Function 'topKQueryScores_Pipeline_VITIS_LOOP_16_1'
+

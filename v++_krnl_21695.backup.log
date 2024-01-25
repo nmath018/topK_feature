@@ -1,0 +1,31 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl
+	Log files: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/krnl
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo.compile_summary, at Mon Nov 27 17:59:44 2023
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl/v++_compile_krnl_guidance.html', at Mon Nov 27 17:59:44 2023
+INFO: [v++ 60-895]   Target platform: /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/hw/hw.xsa'
+INFO: [v++ 74-78] Compiler Version string: 2022.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_u250_gen3x16_xdma_4_1_202210_1
+INFO: [v++ 60-242] Creating kernel: 'topKQueryScores'
+
+===>The following messages were generated while  performing high-level synthesis for kernel: topKQueryScores Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_16_1'.
+WARNING: [v++ 200-885] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' (loop 'VITIS_LOOP_16_1'): Unable to schedule bus request operation ('gmem_load_4_req', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) on port 'gmem' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+WARNING: [v++ 200-885] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' (loop 'VITIS_LOOP_16_1'): Unable to schedule bus request operation ('gmem_load_5_req', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) on port 'gmem' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 106, loop 'VITIS_LOOP_16_1'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'.
+INFO: [v++ 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 73, loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl/system_estimate_krnl.xtxt
+INFO: [v++ 60-586] Created _x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 44s
+INFO: [v++ 60-1653] Closing dispatch client.

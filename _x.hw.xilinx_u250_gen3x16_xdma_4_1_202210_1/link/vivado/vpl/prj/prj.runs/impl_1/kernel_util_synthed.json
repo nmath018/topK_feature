@@ -1,0 +1,45 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "design_state": "Synthesized",
+    "user_budget": {
+        "actual_resources": {
+            "LUT": "4651",
+            "LUTAsMem": "636",
+            "REG": "6083",
+            "BRAM": "2",
+            "URAM": "0",
+            "DSP": "11"
+        },
+        "supply_resources": {
+            "LUT": "1631460",
+            "LUTAsMem": "778896",
+            "REG": "3300589",
+            "BRAM": "2547",
+            "URAM": "1280",
+            "DSP": "12284"
+        }
+    },
+    "kernels": [
+        {
+            "name": "topKQueryScores",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "topKQueryScores_1",
+                    "actual_resources": {
+                        "LUT": "4651",
+                        "LUTAsMem": "636",
+                        "REG": "6083",
+                        "BRAM": "2",
+                        "URAM": "0",
+                        "DSP": "11"
+                    }
+                }
+            ]
+        }
+    ]
+}

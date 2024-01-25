@@ -1,0 +1,96 @@
+<ENTRY>
+{
+ "thisFile": "/home/nmath018/topK_feature/hls_catch22/_x.hw./krnl.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 27 17:57:52 2023",
+ "timestampMillis": "1701136672442",
+ "buildStep": {
+  "cmdId": "a6e5ce87-ff1f-435e-9142-25540c7740a7",
+  "name": "v++",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.hw./krnl/krnl.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform --save-temps -I/include -I./spiral_fft --config config.cfg -c -k topKQueryScores --temp_dir ./_x.hw. -I/home/nmath018/topK_feature/hls_catch22/src -o_x.hw./krnl.xo /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "--save-temps",
+   "-I/include",
+   "-I./spiral_fft",
+   "--config",
+   "config.cfg",
+   "-c",
+   "-k",
+   "topKQueryScores",
+   "--temp_dir",
+   "./_x.hw.",
+   "-I/home/nmath018/topK_feature/hls_catch22/src",
+   "-o_x.hw./krnl.xo",
+   "/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/nmath018/topK_feature/hls_catch22/config.cfg",
+    "content": "[connectivity]\n#This setting allows all three buffers to use seperate HBM banks. \n#sp=load_1.input:DDR[0]\n#sp=store_1.output:DDR[1]\n\n#sc=load_1.output:krnl_1.input\n#sc=krnl_1.output:store_1.input"
+   }
+  ],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:57:52 2023",
+ "timestampMillis": "1701136672442",
+ "status": {
+  "cmdId": "a6e5ce87-ff1f-435e-9142-25540c7740a7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:57:53 2023",
+ "timestampMillis": "1701136673012",
+ "status": {
+  "cmdId": "a6e5ce87-ff1f-435e-9142-25540c7740a7",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:57:53 2023",
+ "timestampMillis": "1701136673111",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw./reports/krnl/v++_compile_krnl_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:57:53 2023",
+ "timestampMillis": "1701136673112",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw./v++_compile_krnl_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

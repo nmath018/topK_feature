@@ -1,0 +1,8 @@
+List of CLB Tiles
+CLEM_X63Y272
+CLEL_R_X63Y272
+
+List of Congested Nets
+level0_i/level1/level1_i/ulp/topKQueryScores_1/inst/control_s_axi_U/k[19]
+level0_i/level1/level1_i/ulp/topKQueryScores_1/inst/mul_32ns_9ns_40_2_1_U19/dout_reg[34]_i_25_n_10
+

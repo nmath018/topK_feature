@@ -1,0 +1,590 @@
+<ENTRY>
+{
+ "thisFile": "/home/nmath018/topK_feature/hls_catch22/build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 27 17:27:56 2023",
+ "timestampMillis": "1701134876466",
+ "buildStep": {
+  "cmdId": "c31a5713-a7af-4158-a79b-d36b346cf6ef",
+  "name": "v++",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t sw_emu --platform /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --save-temps -I/include -I./spiral_fft --config config.cfg -g -l --temp_dir ./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1 -o./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin _x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo ",
+  "args": [
+   "-t",
+   "sw_emu",
+   "--platform",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+   "--save-temps",
+   "-I/include",
+   "-I./spiral_fft",
+   "--config",
+   "config.cfg",
+   "-g",
+   "-l",
+   "--temp_dir",
+   "./_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-o./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin",
+   "_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/nmath018/topK_feature/hls_catch22/config.cfg",
+    "content": "[connectivity]\n#This setting allows all three buffers to use seperate HBM banks. \n#sp=load_1.input:DDR[0]\n#sp=store_1.output:DDR[1]\n\n#sc=load_1.output:krnl_1.input\n#sc=krnl_1.output:store_1.input"
+   }
+  ],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:27:56 2023",
+ "timestampMillis": "1701134876466",
+ "status": {
+  "cmdId": "c31a5713-a7af-4158-a79b-d36b346cf6ef",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 27 17:28:02 2023",
+ "timestampMillis": "1701134882442",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_SW_EMU",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "krnl.link",
+    "file": "/home/nmath018/topK_feature/hls_catch22/build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "topKQueryScores",
+     "file": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/topKQueryScores/topKQueryScores/cpu_sources/krnl.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "topKQueryScores_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.2. SW Build 3671529 on 2022-10-13-17:52:11"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:28:03 2023",
+ "timestampMillis": "1701134883171",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:03 2023",
+ "timestampMillis": "1701134883173",
+ "buildStep": {
+  "cmdId": "e7a83b98-eff2-487a-b131-757ad8e1112e",
+  "name": "regiongen",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_regiongen.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/../runtime/bin/regiongen_new -v -m /home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.xml -r /home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.rtd -t alg -o xcl_top",
+  "args": [
+   "-v",
+   "-m",
+   "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.xml",
+   "-r",
+   "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.rtd",
+   "-t",
+   "alg",
+   "-o",
+   "xcl_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:03 2023",
+ "timestampMillis": "1701134883173",
+ "status": {
+  "cmdId": "e7a83b98-eff2-487a-b131-757ad8e1112e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:05 2023",
+ "timestampMillis": "1701134885567",
+ "status": {
+  "cmdId": "e7a83b98-eff2-487a-b131-757ad8e1112e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:05 2023",
+ "timestampMillis": "1701134885571",
+ "buildStep": {
+  "cmdId": "46112f0b-a88f-4372-acbb-567e28ffe00d",
+  "name": "gcc",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/topKQueryScores_kernel_gcc.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/gcc -I . -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include -std=c++14 -g -I /include -I /home/nmath018/topK_feature/hls_catch22/spiral_fft -I /home/nmath018/topK_feature/hls_catch22/src -g -fPIC -g -c -DHLS_STREAM_THREAD_SAFE -MD -MT obj/krnl.o -MP -MF obj/krnl.Cd /home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/topKQueryScores/topKQueryScores/cpu_sources/krnl.cpp -o obj/krnl.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include",
+   "-std=c++14",
+   "-g",
+   "-I",
+   "/include",
+   "-I",
+   "/home/nmath018/topK_feature/hls_catch22/spiral_fft",
+   "-I",
+   "/home/nmath018/topK_feature/hls_catch22/src",
+   "-g",
+   "-fPIC",
+   "-g",
+   "-c",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-MD",
+   "-MT",
+   "obj/krnl.o",
+   "-MP",
+   "-MF",
+   "obj/krnl.Cd",
+   "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/topKQueryScores/topKQueryScores/cpu_sources/krnl.cpp",
+   "-o",
+   "obj/krnl.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:05 2023",
+ "timestampMillis": "1701134885572",
+ "status": {
+  "cmdId": "46112f0b-a88f-4372-acbb-567e28ffe00d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892931",
+ "status": {
+  "cmdId": "46112f0b-a88f-4372-acbb-567e28ffe00d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892933",
+ "buildStep": {
+  "cmdId": "fc0d7887-389a-49f2-adb1-38b2c5f7f481",
+  "name": "ar",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/topKQueryScores_ar.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/binutils-2.26/bin/ar -cr /home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/topKQueryScores.csim_cu.a /home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/obj/krnl.o",
+  "args": [
+   "-cr",
+   "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/topKQueryScores.csim_cu.a",
+   "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/topKQueryScores/obj/krnl.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892934",
+ "status": {
+  "cmdId": "fc0d7887-389a-49f2-adb1-38b2c5f7f481",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892948",
+ "status": {
+  "cmdId": "fc0d7887-389a-49f2-adb1-38b2c5f7f481",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892951",
+ "buildStep": {
+  "cmdId": "9d254142-1a2a-4c76-bd0d-9d96f9adec49",
+  "name": "g++",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_xcl_top_gpp.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -I . -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl -I /tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include -I /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include -fPIC -g -DHLS_STREAM_THREAD_SAFE -std=c++14 -fpermissive -c -MD -MT obj/xcl_top.o -MP -MF obj/xcl_top.CXXd xcl_top.cpp -o obj/xcl_top.o",
+  "args": [
+   "-I",
+   ".",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../common/technology/autopilot/opencl",
+   "-I",
+   "/tools/Xilinx/Vitis/2022.2/bin/../data/emulation/include",
+   "-I",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/auto_cc/include",
+   "-fPIC",
+   "-g",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-fpermissive",
+   "-c",
+   "-MD",
+   "-MT",
+   "obj/xcl_top.o",
+   "-MP",
+   "-MF",
+   "obj/xcl_top.CXXd",
+   "xcl_top.cpp",
+   "-o",
+   "obj/xcl_top.o"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:12 2023",
+ "timestampMillis": "1701134892952",
+ "status": {
+  "cmdId": "9d254142-1a2a-4c76-bd0d-9d96f9adec49",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895360",
+ "status": {
+  "cmdId": "9d254142-1a2a-4c76-bd0d-9d96f9adec49",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895361",
+ "buildStep": {
+  "cmdId": "4c23f362-1567-47d2-88d1-a8f5fe27cbd7",
+  "name": "g++",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_top_gpp.log",
+  "commandLine": "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/g++ -fPIC -DHLS_STREAM_THREAD_SAFE -std=c++14 -Wall -shared -Wl,--whole-archive,-soname,krnl.link.so -o krnl.link.so topKQueryScores/topKQueryScores.csim_cu.a obj/xcl_top.o -Wl,--no-whole-archive -Wl,--as-needed -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lib/lnx64.o -lhlsmathsim -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -lgmp -lmpfr -lIp_floating_point_v7_1_bitacc_cmodel -Wl,-rpath,/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1 -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1 -lIp_xfft_v9_1_bitacc_cmodel -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0 -lgmp -lIp_fir_compiler_v7_2_bitacc_cmodel -L /tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/lib/csim -lhlsmc++-GCC46 -L /tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/ -lgcov",
+  "args": [
+   "-fPIC",
+   "-DHLS_STREAM_THREAD_SAFE",
+   "-std=c++14",
+   "-Wall",
+   "-shared",
+   "-Wl,--whole-archive,-soname,krnl.link.so",
+   "-o",
+   "krnl.link.so",
+   "topKQueryScores/topKQueryScores.csim_cu.a",
+   "obj/xcl_top.o",
+   "-Wl,--no-whole-archive",
+   "-Wl,--as-needed",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lib/lnx64.o",
+   "-lhlsmathsim",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1",
+   "-lgmp",
+   "-lmpfr",
+   "-lIp_floating_point_v7_1_bitacc_cmodel",
+   "-Wl,-rpath,/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fpo_v7_1",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fft_v9_1",
+   "-lIp_xfft_v9_1_bitacc_cmodel",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/tools/fir_v7_0",
+   "-lgmp",
+   "-lIp_fir_compiler_v7_2_bitacc_cmodel",
+   "-L",
+   "/tools/Xilinx/Vitis_HLS/2022.2/bin/../lnx64/lib/csim",
+   "-lhlsmc++-GCC46",
+   "-L",
+   "/tools/Xilinx/Vivado/2022.2/tps/lnx64/gcc-8.3.0/bin/../lib/gcc/x86_64-pc-linux-gnu/6.2.0/",
+   "-lgcov"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895362",
+ "status": {
+  "cmdId": "4c23f362-1567-47d2-88d1-a8f5fe27cbd7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895467",
+ "status": {
+  "cmdId": "4c23f362-1567-47d2-88d1-a8f5fe27cbd7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895832",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895836",
+ "buildStep": {
+  "cmdId": "4d506991-f645-472f-bc4c-84871ac8219c",
+  "name": "xclbinutil",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_xclbinutil.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/xclbinutil --add-section BITSTREAM:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.so --force --target sw_emu --add-section :JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.rtd --append-section :JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_xml.rtd --add-section BUILD_METADATA:JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.xml --add-section DEBUG_DATA:RAW:/dev/null --add-section SYSTEM_METADATA:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json --output /home/nmath018/topK_feature/hls_catch22/./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.so",
+   "--force",
+   "--target",
+   "sw_emu",
+   "--add-section",
+   ":JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.rtd",
+   "--append-section",
+   ":JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl.link.xml",
+   "--add-section",
+   "DEBUG_DATA:RAW:/dev/null",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json",
+   "--output",
+   "/home/nmath018/topK_feature/hls_catch22/./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:15 2023",
+ "timestampMillis": "1701134895837",
+ "status": {
+  "cmdId": "4d506991-f645-472f-bc4c-84871ac8219c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896048",
+ "status": {
+  "cmdId": "4d506991-f645-472f-bc4c-84871ac8219c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896049",
+ "buildStep": {
+  "cmdId": "3b6d7acd-5449-4bed-9f57-d21e4c53b8ca",
+  "name": "xclbinutil",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin.info",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/xclbinutil --quiet --info --input /home/nmath018/topK_feature/hls_catch22/./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin",
+  "args": [
+   "--quiet",
+   "--info",
+   "--input",
+   "/home/nmath018/topK_feature/hls_catch22/./build_dir.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896050",
+ "status": {
+  "cmdId": "3b6d7acd-5449-4bed-9f57-d21e4c53b8ca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896270",
+ "status": {
+  "cmdId": "3b6d7acd-5449-4bed-9f57-d21e4c53b8ca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896277",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896278",
+ "status": {
+  "cmdId": "c31a5713-a7af-4158-a79b-d36b346cf6ef",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896372",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/v++_link_krnl.link_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:28:16 2023",
+ "timestampMillis": "1701134896373",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.sw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_link_krnl.link_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

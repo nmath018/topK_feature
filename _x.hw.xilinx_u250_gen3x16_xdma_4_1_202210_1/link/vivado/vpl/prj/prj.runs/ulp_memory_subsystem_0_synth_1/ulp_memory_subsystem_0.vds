@@ -1,0 +1,575 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 27 18:24:35 2023
+# Process ID: 2251
+# Current directory: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1
+# Command line: vivado -log ulp_memory_subsystem_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ulp_memory_subsystem_0.tcl
+# Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/ulp_memory_subsystem_0.vds
+# Journal file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/vivado.jou
+# Running On: wolverine.cs.ucr.edu, OS: Linux, CPU Frequency: 2599.811 MHz, CPU Physical cores: 16, Host memory: 134923 MB
+#-----------------------------------------------------------
+source ulp_memory_subsystem_0.tcl -notrace
+INFO: Dispatch client connection id - 32860
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1845.348 ; gain = 25.016 ; free physical = 87265 ; free virtual = 110972
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/ip_repo/xilinx_com_hls_topKQueryScores_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/axis_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pipeline_reg:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/pipeline_reg_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/pipeline_reg_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/axi_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/clk_metadata_adapter_v1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ulp_memory_subsystem_0
+Command: synth_design -top ulp_memory_subsystem_0 -part xcu250-figd2104-2L-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3500
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3480.340 ; gain = 356.727 ; free physical = 83929 ; free virtual = 107659
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 129.114
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4758.684; parent = 3486.281; children = 1272.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ulp_memory_subsystem_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/synth/ulp_memory_subsystem_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:9]
+INFO: [Synth 8-6157] synthesizing module 'interconnect_imp_19ZOU63' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1073]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_interconnect_M00_AXI_MEM00_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_interconnect_M00_AXI_MEM00_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_interconnect_M00_AXI_MEM00_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_interconnect_M00_AXI_MEM00_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'M00_AXI_awsize' of module 'bd_b35e_interconnect_M00_AXI_MEM00_0' is unconnected for instance 'interconnect_m00_axi_mem00' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1622]
+WARNING: [Synth 8-7071] port 'M00_AXI_arsize' of module 'bd_b35e_interconnect_M00_AXI_MEM00_0' is unconnected for instance 'interconnect_m00_axi_mem00' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1622]
+WARNING: [Synth 8-7023] instance 'interconnect_m00_axi_mem00' of module 'bd_b35e_interconnect_M00_AXI_MEM00_0' has 110 connections declared, but only 108 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1622]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_rs_M00_AXI_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_rs_M00_AXI_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_rs_M00_AXI_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_rs_M00_AXI_0_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'bd_b35e_rs_M00_AXI_0' is unconnected for instance 'rs_m00_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1731]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'bd_b35e_rs_M00_AXI_0' is unconnected for instance 'rs_m00_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1731]
+WARNING: [Synth 8-7023] instance 'rs_m00_axi' of module 'bd_b35e_rs_M00_AXI_0' has 68 connections declared, but only 66 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1731]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_vip_M00_AXI_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_M00_AXI_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_vip_M00_AXI_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_M00_AXI_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'bd_b35e_vip_M00_AXI_0' is unconnected for instance 'vip_m00_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1798]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'bd_b35e_vip_M00_AXI_0' is unconnected for instance 'vip_m00_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1798]
+WARNING: [Synth 8-7023] instance 'vip_m00_axi' of module 'bd_b35e_vip_M00_AXI_0' has 64 connections declared, but only 62 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1798]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_vip_S01_AXI_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_S01_AXI_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_vip_S01_AXI_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_S01_AXI_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_vip_S04_AXI_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_S04_AXI_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_vip_S04_AXI_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_vip_S04_AXI_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'bd_b35e_vip_S04_AXI_0' is unconnected for instance 'vip_s04_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1930]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'bd_b35e_vip_S04_AXI_0' is unconnected for instance 'vip_s04_axi' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1930]
+WARNING: [Synth 8-7023] instance 'vip_s04_axi' of module 'bd_b35e_vip_S04_AXI_0' has 72 connections declared, but only 70 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1930]
+INFO: [Synth 8-6155] done synthesizing module 'interconnect_imp_19ZOU63' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:1073]
+INFO: [Synth 8-6157] synthesizing module 'memory_imp_XEOPQ9' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2003]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_calib_const_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_24/synth/bd_b35e_calib_const_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_calib_const_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_24/synth/bd_b35e_calib_const_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_calib_vector_concat_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_18/synth/bd_b35e_calib_vector_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_calib_vector_concat_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_18/synth/bd_b35e_calib_vector_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_interconnect_ddrmem_ctrl_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_interconnect_ddrmem_ctrl_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_interconnect_ddrmem_ctrl_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_interconnect_ddrmem_ctrl_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' is unconnected for instance 'interconnect_ddrmem_ctrl' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+WARNING: [Synth 8-7023] instance 'interconnect_ddrmem_ctrl' of module 'bd_b35e_interconnect_ddrmem_ctrl_0' has 40 connections declared, but only 29 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2106]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_psr_ctrl_interconnect_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_ctrl_interconnect_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_psr_ctrl_interconnect_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_ctrl_interconnect_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_b35e_psr_ctrl_interconnect_0' is unconnected for instance 'psr_ctrl_interconnect' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2136]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_b35e_psr_ctrl_interconnect_0' is unconnected for instance 'psr_ctrl_interconnect' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2136]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_b35e_psr_ctrl_interconnect_0' is unconnected for instance 'psr_ctrl_interconnect' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2136]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_b35e_psr_ctrl_interconnect_0' is unconnected for instance 'psr_ctrl_interconnect' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2136]
+WARNING: [Synth 8-7023] instance 'psr_ctrl_interconnect' of module 'bd_b35e_psr_ctrl_interconnect_0' has 10 connections declared, but only 6 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2136]
+INFO: [Synth 8-6155] done synthesizing module 'memory_imp_XEOPQ9' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2003]
+INFO: [Synth 8-6157] synthesizing module 'reset_imp_LD0D83' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2145]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_psr_aclk1_SLR1_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_aclk1_SLR1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_psr_aclk1_SLR1_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_aclk1_SLR1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_b35e_psr_aclk1_SLR1_0' is unconnected for instance 'psr_aclk1_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2168]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_b35e_psr_aclk1_SLR1_0' is unconnected for instance 'psr_aclk1_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2168]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_b35e_psr_aclk1_SLR1_0' is unconnected for instance 'psr_aclk1_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2168]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_b35e_psr_aclk1_SLR1_0' is unconnected for instance 'psr_aclk1_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2168]
+WARNING: [Synth 8-7023] instance 'psr_aclk1_SLR1' of module 'bd_b35e_psr_aclk1_SLR1_0' has 10 connections declared, but only 6 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2168]
+INFO: [Synth 8-6157] synthesizing module 'bd_b35e_psr_aclk3_SLR1_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_aclk3_SLR1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e_psr_aclk3_SLR1_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/.Xil/Vivado-2251-wolverine.cs.ucr.edu/realtime/bd_b35e_psr_aclk3_SLR1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_b35e_psr_aclk3_SLR1_0' is unconnected for instance 'psr_aclk3_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2175]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_b35e_psr_aclk3_SLR1_0' is unconnected for instance 'psr_aclk3_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2175]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_b35e_psr_aclk3_SLR1_0' is unconnected for instance 'psr_aclk3_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2175]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_b35e_psr_aclk3_SLR1_0' is unconnected for instance 'psr_aclk3_SLR1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2175]
+WARNING: [Synth 8-7023] instance 'psr_aclk3_SLR1' of module 'bd_b35e_psr_aclk3_SLR1_0' has 10 connections declared, but only 6 given [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2175]
+INFO: [Synth 8-6155] done synthesizing module 'reset_imp_LD0D83' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:2145]
+INFO: [Synth 8-6155] done synthesizing module 'bd_b35e' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'ulp_memory_subsystem_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/synth/ulp_memory_subsystem_0.v:53]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_act_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:346]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_adr in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:347]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_ba in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:348]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_bg in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:349]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_ck_c in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:350]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_ck_t in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:351]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_cke in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:352]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_cs_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:353]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_odt in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:357]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_par in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:358]
+WARNING: [Synth 8-3848] Net DDR4_MEM00_reset_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:359]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_act_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:362]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_adr in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:363]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_ba in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:364]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_bg in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:365]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_ck_c in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:366]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_ck_t in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:367]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_cke in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:368]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_cs_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:369]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_odt in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:373]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_par in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:374]
+WARNING: [Synth 8-3848] Net DDR4_MEM01_reset_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:375]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_act_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:378]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_adr in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:379]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_ba in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:380]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_bg in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:381]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_ck_c in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:382]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_ck_t in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:383]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_cke in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:384]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_cs_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:385]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_odt in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:389]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_par in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:390]
+WARNING: [Synth 8-3848] Net DDR4_MEM02_reset_n in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:391]
+WARNING: [Synth 8-3848] Net M01_AXI_araddr in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:425]
+WARNING: [Synth 8-3848] Net M01_AXI_arburst in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:426]
+WARNING: [Synth 8-3848] Net M01_AXI_arcache in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:427]
+WARNING: [Synth 8-3848] Net M01_AXI_arlen in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:428]
+WARNING: [Synth 8-3848] Net M01_AXI_arlock in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:429]
+WARNING: [Synth 8-3848] Net M01_AXI_arprot in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:430]
+WARNING: [Synth 8-3848] Net M01_AXI_arqos in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:431]
+WARNING: [Synth 8-3848] Net M01_AXI_arregion in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:433]
+WARNING: [Synth 8-3848] Net M01_AXI_arsize in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:434]
+WARNING: [Synth 8-3848] Net M01_AXI_arvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:435]
+WARNING: [Synth 8-3848] Net M01_AXI_awaddr in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:436]
+WARNING: [Synth 8-3848] Net M01_AXI_awburst in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:437]
+WARNING: [Synth 8-3848] Net M01_AXI_awcache in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:438]
+WARNING: [Synth 8-3848] Net M01_AXI_awlen in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:439]
+WARNING: [Synth 8-3848] Net M01_AXI_awlock in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:440]
+WARNING: [Synth 8-3848] Net M01_AXI_awprot in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:441]
+WARNING: [Synth 8-3848] Net M01_AXI_awqos in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:442]
+WARNING: [Synth 8-3848] Net M01_AXI_awregion in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:444]
+WARNING: [Synth 8-3848] Net M01_AXI_awsize in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:445]
+WARNING: [Synth 8-3848] Net M01_AXI_awvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:446]
+WARNING: [Synth 8-3848] Net M01_AXI_bready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:447]
+WARNING: [Synth 8-3848] Net M01_AXI_rready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:452]
+WARNING: [Synth 8-3848] Net M01_AXI_wdata in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:455]
+WARNING: [Synth 8-3848] Net M01_AXI_wlast in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:456]
+WARNING: [Synth 8-3848] Net M01_AXI_wstrb in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:458]
+WARNING: [Synth 8-3848] Net M01_AXI_wvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:459]
+WARNING: [Synth 8-3848] Net S00_AXI_arready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:468]
+WARNING: [Synth 8-3848] Net S00_AXI_awready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:480]
+WARNING: [Synth 8-3848] Net S00_AXI_bid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:484]
+WARNING: [Synth 8-3848] Net S00_AXI_bresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:486]
+WARNING: [Synth 8-3848] Net S00_AXI_bvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:487]
+WARNING: [Synth 8-3848] Net S00_AXI_rdata in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:488]
+WARNING: [Synth 8-3848] Net S00_AXI_rid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:489]
+WARNING: [Synth 8-3848] Net S00_AXI_rlast in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:490]
+WARNING: [Synth 8-3848] Net S00_AXI_rresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:492]
+WARNING: [Synth 8-3848] Net S00_AXI_rvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:493]
+WARNING: [Synth 8-3848] Net S00_AXI_wready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:496]
+WARNING: [Synth 8-3848] Net S02_AXI_arready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:540]
+WARNING: [Synth 8-3848] Net S02_AXI_awready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:552]
+WARNING: [Synth 8-3848] Net S02_AXI_bid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:556]
+WARNING: [Synth 8-3848] Net S02_AXI_bresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:558]
+WARNING: [Synth 8-3848] Net S02_AXI_bvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:559]
+WARNING: [Synth 8-3848] Net S02_AXI_rdata in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:560]
+WARNING: [Synth 8-3848] Net S02_AXI_rid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:561]
+WARNING: [Synth 8-3848] Net S02_AXI_rlast in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:562]
+WARNING: [Synth 8-3848] Net S02_AXI_rresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:564]
+WARNING: [Synth 8-3848] Net S02_AXI_rvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:565]
+WARNING: [Synth 8-3848] Net S02_AXI_wready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:568]
+WARNING: [Synth 8-3848] Net S03_AXI_arready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:579]
+WARNING: [Synth 8-3848] Net S03_AXI_awready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:591]
+WARNING: [Synth 8-3848] Net S03_AXI_bid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:595]
+WARNING: [Synth 8-3848] Net S03_AXI_bresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:597]
+WARNING: [Synth 8-3848] Net S03_AXI_bvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:598]
+WARNING: [Synth 8-3848] Net S03_AXI_rdata in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:599]
+WARNING: [Synth 8-3848] Net S03_AXI_rid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:600]
+WARNING: [Synth 8-3848] Net S03_AXI_rlast in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:601]
+WARNING: [Synth 8-3848] Net S03_AXI_rresp in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:603]
+WARNING: [Synth 8-3848] Net S03_AXI_rvalid in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:604]
+WARNING: [Synth 8-3848] Net S03_AXI_wready in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:607]
+WARNING: [Synth 8-3848] Net ddr4_mem00_ui_clk in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:670]
+WARNING: [Synth 8-3848] Net ddr4_mem01_ui_clk in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:672]
+WARNING: [Synth 8-3848] Net ddr4_mem02_ui_clk in module/entity bd_b35e does not have driver. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/synth/bd_b35e.v:674]
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3563.254 ; gain = 439.641 ; free physical = 84138 ; free virtual = 107872
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 129.114
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4835.652; parent = 3563.250; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3581.062 ; gain = 457.449 ; free physical = 84116 ; free virtual = 107850
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 129.114
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4853.465; parent = 3581.062; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3581.062 ; gain = 457.449 ; free physical = 84111 ; free virtual = 107845
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 129.114
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4853.465; parent = 3581.062; children = 1272.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3581.062 ; gain = 0.000 ; free physical = 84092 ; free virtual = 107827
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_5/bd_b35e_psr_aclk1_SLR1_0/ulp_ip_psr_aresetn_kernel_00_slr1_0_in_context.xdc] for cell 'inst/reset/psr_aclk1_SLR1'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_5/bd_b35e_psr_aclk1_SLR1_0/ulp_ip_psr_aresetn_kernel_00_slr1_0_in_context.xdc] for cell 'inst/reset/psr_aclk1_SLR1'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_13/bd_b35e_psr_aclk3_SLR1_0/ulp_ip_psr_aresetn_kernel_00_slr1_0_in_context.xdc] for cell 'inst/reset/psr_aclk3_SLR1'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_13/bd_b35e_psr_aclk3_SLR1_0/ulp_ip_psr_aresetn_kernel_00_slr1_0_in_context.xdc] for cell 'inst/reset/psr_aclk3_SLR1'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_17/bd_b35e_interconnect_M00_AXI_MEM00_0/bd_b35e_interconnect_M00_AXI_MEM00_0_in_context.xdc] for cell 'inst/interconnect/interconnect_m00_axi_mem00'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_17/bd_b35e_interconnect_M00_AXI_MEM00_0/bd_b35e_interconnect_M00_AXI_MEM00_0_in_context.xdc] for cell 'inst/interconnect/interconnect_m00_axi_mem00'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_20/bd_b35e_vip_S01_AXI_0/bd_b35e_vip_S01_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_s01_axi'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_20/bd_b35e_vip_S01_AXI_0/bd_b35e_vip_S01_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_s01_axi'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_21/bd_b35e_vip_S04_AXI_0/bd_b35e_vip_S04_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_s04_axi'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_21/bd_b35e_vip_S04_AXI_0/bd_b35e_vip_S04_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_s04_axi'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_22/bd_b35e_vip_M00_AXI_0/bd_b35e_vip_M00_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_m00_axi'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_22/bd_b35e_vip_M00_AXI_0/bd_b35e_vip_M00_AXI_0_in_context.xdc] for cell 'inst/interconnect/vip_m00_axi'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_23/bd_b35e_rs_M00_AXI_0/bd_b35e_rs_M00_AXI_0_in_context.xdc] for cell 'inst/interconnect/rs_m00_axi'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_23/bd_b35e_rs_M00_AXI_0/bd_b35e_rs_M00_AXI_0_in_context.xdc] for cell 'inst/interconnect/rs_m00_axi'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_19/bd_b35e_interconnect_ddrmem_ctrl_0/bd_b35e_interconnect_ddrmem_ctrl_0_in_context.xdc] for cell 'inst/memory/interconnect_ddrmem_ctrl'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_19/bd_b35e_interconnect_ddrmem_ctrl_0/bd_b35e_interconnect_ddrmem_ctrl_0_in_context.xdc] for cell 'inst/memory/interconnect_ddrmem_ctrl'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_16/bd_b35e_psr_ctrl_interconnect_0/bd_b35e_psr_ctrl_interconnect_0_in_context.xdc] for cell 'inst/memory/psr_ctrl_interconnect'
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_memory_subsystem_0/bd_0/ip/ip_16/bd_b35e_psr_ctrl_interconnect_0/bd_b35e_psr_ctrl_interconnect_0_in_context.xdc] for cell 'inst/memory/psr_ctrl_interconnect'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3624.781 ; gain = 0.000 ; free physical = 86440 ; free virtual = 110180
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3624.781 ; gain = 0.000 ; free physical = 86392 ; free virtual = 110132
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 3624.781 ; gain = 501.168 ; free physical = 91392 ; free virtual = 115138
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 131.115
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.180; parent = 3624.777; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3624.781 ; gain = 501.168 ; free physical = 91369 ; free virtual = 115115
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 131.115
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.180; parent = 3624.777; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reset/psr_aclk1_SLR1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reset/psr_aclk3_SLR1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/interconnect/interconnect_m00_axi_mem00. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/interconnect/vip_s01_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/interconnect/vip_s04_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/interconnect/vip_m00_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/interconnect/rs_m00_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/memory/calib_vector_concat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/memory/interconnect_ddrmem_ctrl. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/memory/psr_ctrl_interconnect. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/memory/calib_const. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3624.781 ; gain = 501.168 ; free physical = 91350 ; free virtual = 115096
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 131.115
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.180; parent = 3624.777; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3624.781 ; gain = 501.168 ; free physical = 91255 ; free virtual = 115002
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 131.115
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.180; parent = 3624.777; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3624.781 ; gain = 501.168 ; free physical = 90833 ; free virtual = 114586
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2553.039; parent = 2423.925; children = 131.780
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.180; parent = 3624.777; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 3942.730 ; gain = 819.117 ; free physical = 90026 ; free virtual = 113763
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2996.751; parent = 2862.799; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5215.133; parent = 3942.730; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 3943.727 ; gain = 820.113 ; free physical = 90021 ; free virtual = 113758
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2998.100; parent = 2864.147; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5216.133; parent = 3943.730; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 3963.766 ; gain = 840.152 ; free physical = 89888 ; free virtual = 113626
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5236.172; parent = 3963.770; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89711 ; free virtual = 113445
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89668 ; free virtual = 113402
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89630 ; free virtual = 113364
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89616 ; free virtual = 113351
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89604 ; free virtual = 113338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89632 ; free virtual = 113368
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |bd_b35e_interconnect_M00_AXI_MEM00_0 |         1|
+|2     |bd_b35e_rs_M00_AXI_0                 |         1|
+|3     |bd_b35e_vip_M00_AXI_0                |         1|
+|4     |bd_b35e_vip_S01_AXI_0                |         1|
+|5     |bd_b35e_vip_S04_AXI_0                |         1|
+|6     |bd_b35e_interconnect_ddrmem_ctrl_0   |         1|
+|7     |bd_b35e_psr_ctrl_interconnect_0      |         1|
+|8     |bd_b35e_psr_aclk1_SLR1_0             |         1|
+|9     |bd_b35e_psr_aclk3_SLR1_0             |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |bd_b35e_interconnect_M00_AXI_MEM00 |     1|
+|2     |bd_b35e_interconnect_ddrmem_ctrl   |     1|
+|3     |bd_b35e_psr_aclk1_SLR1             |     1|
+|4     |bd_b35e_psr_aclk3_SLR1             |     1|
+|5     |bd_b35e_psr_ctrl_interconnect      |     1|
+|6     |bd_b35e_rs_M00_AXI                 |     1|
+|7     |bd_b35e_vip_M00_AXI                |     1|
+|8     |bd_b35e_vip_S01_AXI                |     1|
+|9     |bd_b35e_vip_S04_AXI                |     1|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.707 ; gain = 846.094 ; free physical = 89599 ; free virtual = 113338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 3001.477; parent = 2867.524; children = 133.952
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.109; parent = 3969.707; children = 1272.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5431 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:42 . Memory (MB): peak = 3969.707 ; gain = 802.375 ; free physical = 89507 ; free virtual = 113249
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 3969.711 ; gain = 846.094 ; free physical = 89470 ; free virtual = 113212
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3969.711 ; gain = 0.000 ; free physical = 89412 ; free virtual = 113155
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4073.215 ; gain = 0.000 ; free physical = 89169 ; free virtual = 112917
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 5577b5b8
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 240 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 4087.152 ; gain = 2132.242 ; free physical = 89313 ; free virtual = 113061
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/ulp_memory_subsystem_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ulp_memory_subsystem_0, cache-ID = e7b92352239e893a
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/ulp_memory_subsystem_0_synth_1/ulp_memory_subsystem_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ulp_memory_subsystem_0_utilization_synth.rpt -pb ulp_memory_subsystem_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 18:26:05 2023...

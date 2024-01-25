@@ -1,0 +1,196 @@
+
+*** Running vitis_hls
+    with args -f topKQueryScores.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'nmath018' on host 'wolverine.cs.ucr.edu' (Linux_x86_64 version 3.10.0-1160.102.1.el7.x86_64) on Mon Nov 27 17:33:35 PST 2023
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
+INFO: [HLS 200-10] In directory '/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores'
+Sourcing Tcl script 'topKQueryScores.tcl'
+INFO: [HLS 200-1510] Running: open_project topKQueryScores 
+INFO: [HLS 200-10] Creating and opening project '/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores'.
+INFO: [HLS 200-1510] Running: set_top topKQueryScores 
+INFO: [HLS 200-1510] Running: add_files /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp -cflags  -g -I /include -I /home/nmath018/topK_feature/hls_catch22/spiral_fft -I /home/nmath018/topK_feature/hls_catch22/src 
+INFO: [HLS 200-10] Adding design file '/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcu250-figd2104-2L-e 
+INFO: [HLS 200-1611] Setting target device to 'xcu250-figd2104-2L-e'
+INFO: [HLS 200-1510] Running: create_clock -period 300.000000MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -deadlock_detection sim 
+WARNING: [HLS 200-483] The 'config_export -deadlock_detection' command is deprecated and will be removed in a future release. Use 'config_rtl -deadlock_detection' as its replacement.
+INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=sim' with 'config_rtl -deadlock_detection=sim' in current solution file
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode=1 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format xo -ipname topKQueryScores 
+INFO: [HLS 200-1907] Replacing 'config_export -deadlock_detection=sim' with 'config_rtl -deadlock_detection=sim' in current solution file
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 848.629 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp' ... 
+WARNING: [HLS 207-5554] unexpected pragma parameter 'data' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:12:23)
+WARNING: [HLS 207-5554] unexpected pragma parameter 'data' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:13:23)
+WARNING: [HLS 207-5554] unexpected pragma parameter 'data' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:14:23)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 29.25 seconds. CPU system time: 2.21 seconds. Elapsed time: 31.91 seconds; current allocated memory: 848.629 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2022.2/hls_product/continuous/608/2022.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'topKQueryScores' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:11:0)
+WARNING: [HLS 214-368] interface mode 'ap_none' with wrong type '[238 x double]*' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:11:0)
+WARNING: [HLS 214-368] interface mode 'ap_none' with wrong type 'i32*' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:11:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.31 seconds. CPU system time: 0.64 seconds. Elapsed time: 5.08 seconds; current allocated memory: 848.629 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 848.629 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.18 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.53 seconds; current allocated memory: 848.629 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.38 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.43 seconds; current allocated memory: 848.629 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_16_1' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:17) in function 'topKQueryScores' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_4' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:25) in function 'topKQueryScores' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_16_1' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:17) in function 'topKQueryScores' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_18_2' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:18) in function 'topKQueryScores' completely with a factor of 3.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.51 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.12 seconds; current allocated memory: 912.629 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_24_3' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:24:31) in function 'topKQueryScores'.
+INFO: [HLS 200-472] Inferring partial write operation for 'query_scores' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:21:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'query_scores' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:35:33)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'topKQueryScores' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_16_1'.
+WARNING: [HLS 200-885] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' (loop 'VITIS_LOOP_16_1'): Unable to schedule bus request operation ('gmem_load_4_req', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) on port 'gmem' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' (loop 'VITIS_LOOP_16_1'): Unable to schedule bus request operation ('gmem_load_5_req', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) on port 'gmem' (/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:19) due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 106, loop 'VITIS_LOOP_16_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.79 seconds. CPU system time: 0.04 seconds. Elapsed time: 1 seconds; current allocated memory: 976.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.12 seconds. CPU system time: 0 seconds. Elapsed time: 1.16 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'.
+WARNING: [HLS 200-880] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4' (loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('query_scores_addr_1_write_ln35', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:35) of constant 4294967295 on array 'query_scores' and 'load' operation ('query_scores_load', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:28) on array 'query_scores'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4' (loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('query_scores_addr_1_write_ln35', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:35) of constant 4294967295 on array 'query_scores' and 'load' operation ('query_scores_load', /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:28) on array 'query_scores'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 73, loop 'VITIS_LOOP_24_3_VITIS_LOOP_27_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.67 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.7 seconds; current allocated memory: 976.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.66 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.69 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'topKQueryScores' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.37 seconds. CPU system time: 0 seconds. Elapsed time: 0.39 seconds; current allocated memory: 976.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.59 seconds. CPU system time: 0 seconds. Elapsed time: 0.61 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'topKQueryScores_Pipeline_VITIS_LOOP_16_1' pipeline 'VITIS_LOOP_16_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_8_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'topKQueryScores_Pipeline_VITIS_LOOP_16_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.36 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.49 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4' pipeline 'VITIS_LOOP_24_3_VITIS_LOOP_27_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.28 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.37 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'topKQueryScores' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'topKQueryScores/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'topKQueryScores/fs_matrix' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'topKQueryScores/query_type' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'topKQueryScores/k' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'topKQueryScores/topK_indices' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'topKQueryScores' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'fs_matrix', 'query_type', 'k', 'topK_indices' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_9ns_40_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32ns_64_5_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'topKQueryScores'.
+INFO: [RTMG 210-278] Implementing memory 'topKQueryScores_query_scores_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.77 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.07 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.71 seconds. CPU system time: 0.1 seconds. Elapsed time: 1.83 seconds; current allocated memory: 976.629 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.23 seconds. CPU system time: 0.07 seconds. Elapsed time: 1.31 seconds; current allocated memory: 976.629 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for topKQueryScores.
+INFO: [VLOG 209-307] Generating Verilog RTL for topKQueryScores.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 411.00 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 44.55 seconds. CPU system time: 3.36 seconds. Elapsed time: 50.14 seconds; current allocated memory: 128.000 MB.
+INFO: [HLS 200-1510] Running: export_design 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1829.316 ; gain = 6.016 ; free physical = 109188 ; free virtual = 130034
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Running package_xo -xo_path /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/export.xo -kernel_name topKQueryScores -kernel_xml /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/../kernel/kernel.xml -kernel_files /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp -ip_directory /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/ip_unzip_dir -design_xml /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.autopilot/db/topKQueryScores.design.xml -debug_directory /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.debug -hls_directory /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/hls_files
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 17:35:01 2023...
+INFO: [HLS 200-802] Generated output file topKQueryScores/solution/impl/export.xo
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 27.17 seconds. CPU system time: 2.82 seconds. Elapsed time: 41.85 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: close_project 
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 76.83 seconds. Total CPU system time: 7.03 seconds. Total elapsed time: 97.64 seconds; peak allocated memory: 976.629 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon Nov 27 17:35:12 2023...

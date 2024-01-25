@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 27 18:28:42 2023
+# Process ID: 12452
+# Current directory: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1
+# Command line: vivado -log bd_1361_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_1361_xbar_0.tcl
+# Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/bd_1361_xbar_0.vds
+# Journal file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/vivado.jou
+# Running On: wolverine.cs.ucr.edu, OS: Linux, CPU Frequency: 2599.811 MHz, CPU Physical cores: 16, Host memory: 134923 MB
+#-----------------------------------------------------------
+source bd_1361_xbar_0.tcl -notrace
+INFO: Dispatch client connection id - 32860
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1847.324 ; gain = 2.020 ; free physical = 98788 ; free virtual = 122532
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/ip_repo/xilinx_com_hls_topKQueryScores_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axis_clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/axis_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/axis_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:pipeline_reg:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/pipeline_reg_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/pipeline_reg_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:shell_utils_build_info:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/shell_utils_build_info_v1_0' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:axi_clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/axi_clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/axi_clk_metadata_adapter_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:clk_metadata_adapter:1.0'. The one found in IP location '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/shell_subsystem_ipdefs/clk_metadata_adapter_v1_0' will take precedence over the same IP in location /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/.local/hw_platform/iprepo/ip_repo/pxi_ii_infra/clk_metadata_adapter_v1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_1361_xbar_0
+Command: synth_design -top bd_1361_xbar_0 -part xcu250-figd2104-2L-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13445
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3434.121 ; gain = 353.793 ; free physical = 88573 ; free virtual = 112320
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2511.824; parent = 2381.777; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4725.359; parent = 3444.027; children = 1281.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_1361_xbar_0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_ss_ucs_0/bd_0/ip/ip_1/synth/bd_1361_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_crossbar_sasd' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized2' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized3' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized4' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized5' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized6' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_decoder' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_decerr_slave' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter_sasd' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_addr_arbiter_sasd' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_splitter' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_splitter' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_28_splitter__parameterized0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_splitter__parameterized0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_27_axic_register_slice' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_crossbar_sasd' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_28_axi_crossbar' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6155] done synthesizing module 'bd_1361_xbar_0' (0#1) [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_ss_ucs_0/bd_0/ip/ip_1/synth/bd_1361_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_28_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_28_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[5] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[4] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[3] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[2] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[5] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[4] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[3] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[2] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_28_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[2] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[5] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[4] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[3] in module axi_crossbar_v2_1_28_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 3616.000 ; gain = 535.672 ; free physical = 86088 ; free virtual = 109838
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4897.328; parent = 3615.996; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 3630.840 ; gain = 550.512 ; free physical = 86103 ; free virtual = 109852
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4912.172; parent = 3630.840; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 3630.840 ; gain = 550.512 ; free physical = 86028 ; free virtual = 109777
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4912.172; parent = 3630.840; children = 1281.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3630.840 ; gain = 0.000 ; free physical = 85886 ; free virtual = 109636
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_ss_ucs_0/bd_0/ip/ip_1/bd_1361_xbar_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3735.430 ; gain = 0.000 ; free physical = 84293 ; free virtual = 108049
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ip/ulp_ss_ucs_0/bd_0/ip/ip_1/bd_1361_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3735.430 ; gain = 0.000 ; free physical = 84292 ; free virtual = 108048
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3735.430 ; gain = 0.000 ; free physical = 84284 ; free virtual = 108040
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 3735.430 ; gain = 655.102 ; free physical = 84425 ; free virtual = 108180
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5016.762; parent = 3735.430; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 3735.430 ; gain = 655.102 ; free physical = 84417 ; free virtual = 108173
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5016.762; parent = 3735.430; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/dont_touch.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 3735.430 ; gain = 655.102 ; free physical = 84411 ; free virtual = 108166
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5016.762; parent = 3735.430; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 3735.434 ; gain = 655.105 ; free physical = 84362 ; free virtual = 108124
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5016.762; parent = 3735.430; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               56 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 57    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.gen/my_rm/bd/ulp/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 3735.434 ; gain = 655.105 ; free physical = 84372 ; free virtual = 108139
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2573.064; parent = 2443.018; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5016.762; parent = 3735.430; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 3906.742 ; gain = 826.414 ; free physical = 82700 ; free virtual = 106486
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2943.479; parent = 2815.894; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5188.074; parent = 3906.742; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 3952.785 ; gain = 872.457 ; free physical = 82423 ; free virtual = 106210
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2960.210; parent = 2832.625; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5234.121; parent = 3952.789; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 3960.793 ; gain = 880.465 ; free physical = 82407 ; free virtual = 106194
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2960.210; parent = 2832.625; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82584 ; free virtual = 106372
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.263; parent = 2833.003; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82608 ; free virtual = 106396
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.306; parent = 2833.026; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82647 ; free virtual = 106435
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.329; parent = 2833.049; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82687 ; free virtual = 106476
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.333; parent = 2833.053; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82729 ; free virtual = 106517
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.342; parent = 2833.062; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82752 ; free virtual = 106540
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.342; parent = 2833.062; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    17|
+|3     |LUT3 |    24|
+|4     |LUT4 |    47|
+|5     |LUT5 |   108|
+|6     |LUT6 |    76|
+|7     |FDRE |   127|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 3960.797 ; gain = 880.469 ; free physical = 82789 ; free virtual = 106577
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2961.357; parent = 2833.077; children = 130.047
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 5242.129; parent = 3960.797; children = 1281.332
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 82 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 3960.797 ; gain = 775.879 ; free physical = 82918 ; free virtual = 106707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 3960.801 ; gain = 880.469 ; free physical = 82989 ; free virtual = 106778
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3968.797 ; gain = 0.000 ; free physical = 83375 ; free virtual = 107163
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4031.508 ; gain = 0.000 ; free physical = 84836 ; free virtual = 108619
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 6a96dba
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 4031.508 ; gain = 2075.613 ; free physical = 85031 ; free virtual = 108814
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/bd_1361_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_1361_xbar_0, cache-ID = 683d94a60c46451d
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/bd_1361_xbar_0_synth_1/bd_1361_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_1361_xbar_0_utilization_synth.rpt -pb bd_1361_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 18:30:21 2023...

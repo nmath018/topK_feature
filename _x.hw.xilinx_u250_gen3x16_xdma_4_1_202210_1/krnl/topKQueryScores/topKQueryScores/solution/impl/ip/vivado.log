@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Nov 27 18:00:49 2023
+# Process ID: 15358
+# Current directory: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/vivado.log
+# Journal file: /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/vivado.jou
+# Running On: wolverine.cs.ucr.edu, OS: Linux, CPU Frequency: 2599.811 MHz, CPU Physical cores: 16, Host memory: 134923 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1829.469 ; gain = 3.016 ; free physical = 106916 ; free virtual = 129963
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_dadd_64ns_64ns_64_8_full_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_dmul_64ns_64ns_64_8_max_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'topKQueryScores_sitodp_32ns_64_5_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+Running package_xo -xo_path /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/export.xo -kernel_name topKQueryScores -kernel_xml /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/../kernel/kernel.xml -kernel_files /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp -ip_directory /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/ip_unzip_dir -design_xml /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.autopilot/db/topKQueryScores.design.xml -debug_directory /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.debug -hls_directory /home/nmath018/topK_feature/hls_catch22/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/impl/ip/hls_files
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 18:01:07 2023...

@@ -1,0 +1,15 @@
+Kernel trace events
+Device, Binary, Kernel, Compute Unit, Function, Data Type, Index, Start Time (ms), End Time (ms), Value
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,top,top,0,0.192280,0.199028,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,outstanding,0,0.000000,0.192550,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,outstanding,0,0.192550,0.196411,1
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,outstanding,0,0.196411,0.196411,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,row,0,0.000000,0.192550,65535
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,row,0,0.192550,0.196411,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_16_1_fu_154,row,0,0.196411,0.196411,65535
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,outstanding,0,0.000000,0.196414,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,outstanding,0,0.196414,0.199028,1
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,outstanding,0,0.199028,0.199028,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,row,0,0.000000,0.196414,65535
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,row,0,0.196414,0.199028,0
+xilinx_u250_gen3x16_xdma_4_1_202210_1-0,krnl.link,topKQueryScores,topKQueryScores_1,grp_topKQueryScores_Pipeline_VITIS_LOOP_24_3_VITIS_LOOP_27_4_fu_165,row,0,0.199028,0.199028,65535

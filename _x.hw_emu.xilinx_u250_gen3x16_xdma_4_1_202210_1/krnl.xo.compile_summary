@@ -1,0 +1,248 @@
+<ENTRY>
+{
+ "thisFile": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Nov 27 17:33:22 2023",
+ "timestampMillis": "1701135202612",
+ "buildStep": {
+  "cmdId": "6431e680-dc80-45a9-8e47-c80ba2c5a5aa",
+  "name": "v++",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/krnl.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.2/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw_emu --platform /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --save-temps -I/include -I./spiral_fft --config config.cfg -g -c -k topKQueryScores --temp_dir ./_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1 -I/home/nmath018/topK_feature/hls_catch22/src -o_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo /home/nmath018/topK_feature/hls_catch22/src/krnl.cpp ",
+  "args": [
+   "-t",
+   "hw_emu",
+   "--platform",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+   "--save-temps",
+   "-I/include",
+   "-I./spiral_fft",
+   "--config",
+   "config.cfg",
+   "-g",
+   "-c",
+   "-k",
+   "topKQueryScores",
+   "--temp_dir",
+   "./_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-I/home/nmath018/topK_feature/hls_catch22/src",
+   "-o_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo",
+   "/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/nmath018/topK_feature/hls_catch22/config.cfg",
+    "content": "[connectivity]\n#This setting allows all three buffers to use seperate HBM banks. \n#sp=load_1.input:DDR[0]\n#sp=store_1.output:DDR[1]\n\n#sc=load_1.output:krnl_1.input\n#sc=krnl_1.output:store_1.input"
+   }
+  ],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:33:22 2023",
+ "timestampMillis": "1701135202612",
+ "status": {
+  "cmdId": "6431e680-dc80-45a9-8e47-c80ba2c5a5aa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Nov 27 17:33:28 2023",
+ "timestampMillis": "1701135208915",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "topKQueryScores",
+     "file": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.2. SW Build 3671529 on 2022-10-13-17:52:11"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Nov 27 17:33:28 2023",
+ "timestampMillis": "1701135208919",
+ "buildStep": {
+  "cmdId": "105912ec-397b-47e1-9e31-fc815d1a316e",
+  "name": "vitis_hls",
+  "logFile": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/nmath018/topK_feature/hls_catch22"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:33:28 2023",
+ "timestampMillis": "1701135208919",
+ "status": {
+  "cmdId": "105912ec-397b-47e1-9e31-fc815d1a316e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312903",
+ "status": {
+  "cmdId": "105912ec-397b-47e1-9e31-fc815d1a316e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312922",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.autopilot/db/topKQueryScores.design.xml",
+  "name": "topKQueryScores",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312922",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/.autopilot/db/.message_syn.xml",
+  "name": "topKQueryScores",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312924",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl/hls_reports/topKQueryScores_csynth.rpt",
+  "name": "topKQueryScores",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312924",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl/topKQueryScores/topKQueryScores/solution/syn/report/topKQueryScores_csynth.xml",
+  "name": "topKQueryScores",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:12 2023",
+ "timestampMillis": "1701135312939",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl/system_estimate_krnl.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Nov 27 17:35:13 2023",
+ "timestampMillis": "1701135313015",
+ "status": {
+  "cmdId": "6431e680-dc80-45a9-8e47-c80ba2c5a5aa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:13 2023",
+ "timestampMillis": "1701135313106",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/krnl/v++_compile_krnl_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Nov 27 17:35:13 2023",
+ "timestampMillis": "1701135313107",
+ "report": {
+  "path": "/home/nmath018/topK_feature/hls_catch22/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_compile_krnl_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

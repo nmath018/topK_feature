@@ -1,0 +1,10 @@
+/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:12:23: warning: unexpected pragma parameter 'data' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE data port=fs_matrix
+                      ^
+/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:13:23: warning: unexpected pragma parameter 'data' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE data port=query_type
+                      ^
+/home/nmath018/topK_feature/hls_catch22/src/krnl.cpp:14:23: warning: unexpected pragma parameter 'data' [-Winvalid-hls-pragmas]
+#pragma HLS INTERFACE data port=topK_indices
+                      ^
+3 warnings generated.

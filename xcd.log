@@ -1,0 +1,667 @@
+Mon Nov 27 17:26:52 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:26:52 2023: Server was asked to start on port: '36464'
+Mon Nov 27 17:26:52 2023: Server is using token UUID: '08eb6281-6909-41ef-80b0-c35750085a46'
+Mon Nov 27 17:26:52 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:26:52 2023: Attempting to start server on port '36464'
+Mon Nov 27 17:26:52 2023: XCD main fifo: created main fifo '/tmp/xcdmain08eb6281-6909-41ef-80b0-c35750085a46', fd read = 12
+Mon Nov 27 17:26:52 2023: Running Dispatch Server
+Mon Nov 27 17:26:52 2023: Version 2.2.0
+Mon Nov 27 17:26:59 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:26:59 2023: Starting Socket connection
+Mon Nov 27 17:26:59 2023: EXCHANGE_TOKEN received, server token: 08eb6281-6909-41ef-80b0-c35750085a46, passed token: 08eb6281-6909-41ef-80b0-c35750085a46
+Mon Nov 27 17:27:00 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:27:00 2023: SESSION_MGR: creating session with session uuid: '36b12554-7e5d-4543-96df-5e8ab493264c' and name 'v++_compile_krnl'
+Mon Nov 27 17:27:00 2023: KERNEL_SVC: creating session with uuid: '36b12554-7e5d-4543-96df-5e8ab493264c' and name 'v++_compile_krnl'
+Mon Nov 27 17:27:00 2023: GUIDANCE_SMGR: creating guidance session with uuid: '36b12554-7e5d-4543-96df-5e8ab493264c' and name 'v++_compile_krnl'
+Mon Nov 27 17:27:00 2023: SYSTEM_DIAGRAM: creating session with uuid: '36b12554-7e5d-4543-96df-5e8ab493264c' and name 'v++_compile_krnl'
+Mon Nov 27 17:27:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:27:16 2023: Starting Socket connection
+Mon Nov 27 17:27:42 2023: SESSION_MGR: closing session for UUID '36b12554-7e5d-4543-96df-5e8ab493264c' with name 'v++_compile_krnl'
+Mon Nov 27 17:27:42 2023: KERNEL_SVC: closing session for UUID '36b12554-7e5d-4543-96df-5e8ab493264c' with name 'v++_compile_krnl'
+Mon Nov 27 17:27:42 2023: GUIDANCE_SMGR: closing session for UUID '36b12554-7e5d-4543-96df-5e8ab493264c' with name 'v++_compile_krnl'
+Mon Nov 27 17:27:42 2023: SYSTEM_DIAGRAM: closing session for UUID '36b12554-7e5d-4543-96df-5e8ab493264c' with name 'v++_compile_krnl'
+Mon Nov 27 17:27:42 2023: STOP_SERVER received, server token: 08eb6281-6909-41ef-80b0-c35750085a46, passed token: 08eb6281-6909-41ef-80b0-c35750085a46
+Mon Nov 27 17:27:42 2023: Socket received request to stop server.
+Mon Nov 27 17:27:42 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:27:42 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:27:42 2023: XCD main fifo: Stopping
+Mon Nov 27 17:27:42 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:27:42 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:27:42 2023: SERVER: destructor for server bound to port 36464
+Mon Nov 27 17:27:42 2023: XCD main fifo: Good unlink of /tmp/xcdmain08eb6281-6909-41ef-80b0-c35750085a46
+Mon Nov 27 17:27:42 2023: Server exiting with status 0.
+Mon Nov 27 17:27:43 2023: Closing log file.
+Mon Nov 27 17:27:48 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:27:48 2023: Server was asked to start on port: '40416'
+Mon Nov 27 17:27:48 2023: Server is using token UUID: 'e7208c96-cee0-4547-8f72-2e00b4bb5d18'
+Mon Nov 27 17:27:48 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:27:48 2023: Attempting to start server on port '40416'
+Mon Nov 27 17:27:48 2023: XCD main fifo: created main fifo '/tmp/xcdmaine7208c96-cee0-4547-8f72-2e00b4bb5d18', fd read = 12
+Mon Nov 27 17:27:48 2023: Running Dispatch Server
+Mon Nov 27 17:27:48 2023: Version 2.2.0
+Mon Nov 27 17:27:56 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:27:56 2023: Starting Socket connection
+Mon Nov 27 17:27:56 2023: EXCHANGE_TOKEN received, server token: e7208c96-cee0-4547-8f72-2e00b4bb5d18, passed token: e7208c96-cee0-4547-8f72-2e00b4bb5d18
+Mon Nov 27 17:27:56 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:27:56 2023: SESSION_MGR: creating session with session uuid: '655304f9-4981-40ee-99ef-0b05bd9dab1a' and name 'v++_link_krnl.link'
+Mon Nov 27 17:27:56 2023: KERNEL_SVC: creating session with uuid: '655304f9-4981-40ee-99ef-0b05bd9dab1a' and name 'v++_link_krnl.link'
+Mon Nov 27 17:27:56 2023: GUIDANCE_SMGR: creating guidance session with uuid: '655304f9-4981-40ee-99ef-0b05bd9dab1a' and name 'v++_link_krnl.link'
+Mon Nov 27 17:27:56 2023: SYSTEM_DIAGRAM: creating session with uuid: '655304f9-4981-40ee-99ef-0b05bd9dab1a' and name 'v++_link_krnl.link'
+Mon Nov 27 17:28:16 2023: SESSION_MGR: closing session for UUID '655304f9-4981-40ee-99ef-0b05bd9dab1a' with name 'v++_link_krnl.link'
+Mon Nov 27 17:28:16 2023: KERNEL_SVC: closing session for UUID '655304f9-4981-40ee-99ef-0b05bd9dab1a' with name 'v++_link_krnl.link'
+Mon Nov 27 17:28:16 2023: GUIDANCE_SMGR: closing session for UUID '655304f9-4981-40ee-99ef-0b05bd9dab1a' with name 'v++_link_krnl.link'
+Mon Nov 27 17:28:16 2023: SYSTEM_DIAGRAM: closing session for UUID '655304f9-4981-40ee-99ef-0b05bd9dab1a' with name 'v++_link_krnl.link'
+Mon Nov 27 17:28:16 2023: STOP_SERVER received, server token: e7208c96-cee0-4547-8f72-2e00b4bb5d18, passed token: e7208c96-cee0-4547-8f72-2e00b4bb5d18
+Mon Nov 27 17:28:16 2023: Socket received request to stop server.
+Mon Nov 27 17:28:16 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:28:16 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:28:16 2023: XCD main fifo: Stopping
+Mon Nov 27 17:28:16 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:28:16 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:28:16 2023: SERVER: destructor for server bound to port 40416
+Mon Nov 27 17:28:16 2023: XCD main fifo: Good unlink of /tmp/xcdmaine7208c96-cee0-4547-8f72-2e00b4bb5d18
+Mon Nov 27 17:28:16 2023: Server exiting with status 0.
+Mon Nov 27 17:28:16 2023: Closing log file.
+Mon Nov 27 17:28:21 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:28:21 2023: Server was asked to start on port: '32837'
+Mon Nov 27 17:28:21 2023: Server is using token UUID: 'a23f0bb7-196e-4230-8089-a37385a3f0f8'
+Mon Nov 27 17:28:21 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:28:21 2023: Attempting to start server on port '32837'
+Mon Nov 27 17:28:21 2023: XCD main fifo: created main fifo '/tmp/xcdmaina23f0bb7-196e-4230-8089-a37385a3f0f8', fd read = 12
+Mon Nov 27 17:28:21 2023: Running Dispatch Server
+Mon Nov 27 17:28:21 2023: Version 2.2.0
+Mon Nov 27 17:28:29 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:28:29 2023: Starting Socket connection
+Mon Nov 27 17:28:29 2023: EXCHANGE_TOKEN received, server token: a23f0bb7-196e-4230-8089-a37385a3f0f8, passed token: a23f0bb7-196e-4230-8089-a37385a3f0f8
+Mon Nov 27 17:28:29 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:28:29 2023: SESSION_MGR: creating session with session uuid: 'acff9231-9885-47fc-93a7-3e13b3def2c2' and name 'v++_package_krnl'
+Mon Nov 27 17:28:29 2023: KERNEL_SVC: creating session with uuid: 'acff9231-9885-47fc-93a7-3e13b3def2c2' and name 'v++_package_krnl'
+Mon Nov 27 17:28:29 2023: GUIDANCE_SMGR: creating guidance session with uuid: 'acff9231-9885-47fc-93a7-3e13b3def2c2' and name 'v++_package_krnl'
+Mon Nov 27 17:28:29 2023: SYSTEM_DIAGRAM: creating session with uuid: 'acff9231-9885-47fc-93a7-3e13b3def2c2' and name 'v++_package_krnl'
+Mon Nov 27 17:28:34 2023: SESSION_MGR: closing session for UUID 'acff9231-9885-47fc-93a7-3e13b3def2c2' with name 'v++_package_krnl'
+Mon Nov 27 17:28:34 2023: KERNEL_SVC: closing session for UUID 'acff9231-9885-47fc-93a7-3e13b3def2c2' with name 'v++_package_krnl'
+Mon Nov 27 17:28:34 2023: GUIDANCE_SMGR: closing session for UUID 'acff9231-9885-47fc-93a7-3e13b3def2c2' with name 'v++_package_krnl'
+Mon Nov 27 17:28:34 2023: SYSTEM_DIAGRAM: closing session for UUID 'acff9231-9885-47fc-93a7-3e13b3def2c2' with name 'v++_package_krnl'
+Mon Nov 27 17:28:34 2023: STOP_SERVER received, server token: a23f0bb7-196e-4230-8089-a37385a3f0f8, passed token: a23f0bb7-196e-4230-8089-a37385a3f0f8
+Mon Nov 27 17:28:34 2023: Socket received request to stop server.
+Mon Nov 27 17:28:34 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:28:34 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:28:34 2023: XCD main fifo: Stopping
+Mon Nov 27 17:28:34 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:28:34 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:28:34 2023: SERVER: destructor for server bound to port 32837
+Mon Nov 27 17:28:34 2023: XCD main fifo: Good unlink of /tmp/xcdmaina23f0bb7-196e-4230-8089-a37385a3f0f8
+Mon Nov 27 17:28:34 2023: Server exiting with status 0.
+Mon Nov 27 17:28:34 2023: Closing log file.
+Mon Nov 27 17:33:14 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:33:14 2023: Server was asked to start on port: '39221'
+Mon Nov 27 17:33:14 2023: Server is using token UUID: 'cbc2f1f2-e1fa-4a00-b07d-eac41e7324d2'
+Mon Nov 27 17:33:14 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:33:14 2023: Attempting to start server on port '39221'
+Mon Nov 27 17:33:14 2023: XCD main fifo: created main fifo '/tmp/xcdmaincbc2f1f2-e1fa-4a00-b07d-eac41e7324d2', fd read = 12
+Mon Nov 27 17:33:14 2023: Running Dispatch Server
+Mon Nov 27 17:33:14 2023: Version 2.2.0
+Mon Nov 27 17:33:22 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:33:22 2023: Starting Socket connection
+Mon Nov 27 17:33:22 2023: EXCHANGE_TOKEN received, server token: cbc2f1f2-e1fa-4a00-b07d-eac41e7324d2, passed token: cbc2f1f2-e1fa-4a00-b07d-eac41e7324d2
+Mon Nov 27 17:33:23 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:33:23 2023: SESSION_MGR: creating session with session uuid: 'cb993c38-f39b-417b-a693-9a541efdefc1' and name 'v++_compile_krnl'
+Mon Nov 27 17:33:23 2023: KERNEL_SVC: creating session with uuid: 'cb993c38-f39b-417b-a693-9a541efdefc1' and name 'v++_compile_krnl'
+Mon Nov 27 17:33:23 2023: GUIDANCE_SMGR: creating guidance session with uuid: 'cb993c38-f39b-417b-a693-9a541efdefc1' and name 'v++_compile_krnl'
+Mon Nov 27 17:33:23 2023: SYSTEM_DIAGRAM: creating session with uuid: 'cb993c38-f39b-417b-a693-9a541efdefc1' and name 'v++_compile_krnl'
+Mon Nov 27 17:33:39 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:33:39 2023: Starting Socket connection
+Mon Nov 27 17:35:13 2023: SESSION_MGR: closing session for UUID 'cb993c38-f39b-417b-a693-9a541efdefc1' with name 'v++_compile_krnl'
+Mon Nov 27 17:35:13 2023: KERNEL_SVC: closing session for UUID 'cb993c38-f39b-417b-a693-9a541efdefc1' with name 'v++_compile_krnl'
+Mon Nov 27 17:35:13 2023: GUIDANCE_SMGR: closing session for UUID 'cb993c38-f39b-417b-a693-9a541efdefc1' with name 'v++_compile_krnl'
+Mon Nov 27 17:35:13 2023: SYSTEM_DIAGRAM: closing session for UUID 'cb993c38-f39b-417b-a693-9a541efdefc1' with name 'v++_compile_krnl'
+Mon Nov 27 17:35:13 2023: STOP_SERVER received, server token: cbc2f1f2-e1fa-4a00-b07d-eac41e7324d2, passed token: cbc2f1f2-e1fa-4a00-b07d-eac41e7324d2
+Mon Nov 27 17:35:13 2023: Socket received request to stop server.
+Mon Nov 27 17:35:13 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:35:13 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:35:13 2023: XCD main fifo: Stopping
+Mon Nov 27 17:35:13 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:35:13 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:35:13 2023: SERVER: destructor for server bound to port 39221
+Mon Nov 27 17:35:13 2023: XCD main fifo: Good unlink of /tmp/xcdmaincbc2f1f2-e1fa-4a00-b07d-eac41e7324d2
+Mon Nov 27 17:35:13 2023: Server exiting with status 0.
+Mon Nov 27 17:35:13 2023: Closing log file.
+Mon Nov 27 17:35:18 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:35:18 2023: Server was asked to start on port: '45201'
+Mon Nov 27 17:35:18 2023: Server is using token UUID: 'bc9f3968-1f36-4005-a395-9d88710a607a'
+Mon Nov 27 17:35:18 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:35:18 2023: Attempting to start server on port '45201'
+Mon Nov 27 17:35:18 2023: XCD main fifo: created main fifo '/tmp/xcdmainbc9f3968-1f36-4005-a395-9d88710a607a', fd read = 12
+Mon Nov 27 17:35:18 2023: Running Dispatch Server
+Mon Nov 27 17:35:18 2023: Version 2.2.0
+Mon Nov 27 17:35:26 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:35:26 2023: Starting Socket connection
+Mon Nov 27 17:35:26 2023: EXCHANGE_TOKEN received, server token: bc9f3968-1f36-4005-a395-9d88710a607a, passed token: bc9f3968-1f36-4005-a395-9d88710a607a
+Mon Nov 27 17:35:26 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:35:26 2023: SESSION_MGR: creating session with session uuid: 'b54ba5b2-9902-41e7-89f6-bb979b04708b' and name 'v++_link_krnl.link'
+Mon Nov 27 17:35:26 2023: KERNEL_SVC: creating session with uuid: 'b54ba5b2-9902-41e7-89f6-bb979b04708b' and name 'v++_link_krnl.link'
+Mon Nov 27 17:35:26 2023: GUIDANCE_SMGR: creating guidance session with uuid: 'b54ba5b2-9902-41e7-89f6-bb979b04708b' and name 'v++_link_krnl.link'
+Mon Nov 27 17:35:26 2023: SYSTEM_DIAGRAM: creating session with uuid: 'b54ba5b2-9902-41e7-89f6-bb979b04708b' and name 'v++_link_krnl.link'
+Mon Nov 27 17:36:15 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:36:15 2023: Starting Socket connection
+Mon Nov 27 17:36:36 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:36:36 2023: Starting Socket connection
+Mon Nov 27 17:43:34 2023: SESSION_MGR: closing session for UUID 'b54ba5b2-9902-41e7-89f6-bb979b04708b' with name 'v++_link_krnl.link'
+Mon Nov 27 17:43:34 2023: KERNEL_SVC: closing session for UUID 'b54ba5b2-9902-41e7-89f6-bb979b04708b' with name 'v++_link_krnl.link'
+Mon Nov 27 17:43:34 2023: GUIDANCE_SMGR: closing session for UUID 'b54ba5b2-9902-41e7-89f6-bb979b04708b' with name 'v++_link_krnl.link'
+Mon Nov 27 17:43:34 2023: SYSTEM_DIAGRAM: closing session for UUID 'b54ba5b2-9902-41e7-89f6-bb979b04708b' with name 'v++_link_krnl.link'
+Mon Nov 27 17:43:34 2023: STOP_SERVER received, server token: bc9f3968-1f36-4005-a395-9d88710a607a, passed token: bc9f3968-1f36-4005-a395-9d88710a607a
+Mon Nov 27 17:43:34 2023: Socket received request to stop server.
+Mon Nov 27 17:43:34 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:43:34 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:43:34 2023: XCD main fifo: Stopping
+Mon Nov 27 17:43:34 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:43:34 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:43:34 2023: SERVER: destructor for server bound to port 45201
+Mon Nov 27 17:43:34 2023: XCD main fifo: Good unlink of /tmp/xcdmainbc9f3968-1f36-4005-a395-9d88710a607a
+Mon Nov 27 17:43:34 2023: Server exiting with status 0.
+Mon Nov 27 17:43:34 2023: Closing log file.
+Mon Nov 27 17:43:39 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:43:39 2023: Server was asked to start on port: '39325'
+Mon Nov 27 17:43:39 2023: Server is using token UUID: '26fe62d0-1c05-4780-8509-e5ebee0906e1'
+Mon Nov 27 17:43:39 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:43:39 2023: Attempting to start server on port '39325'
+Mon Nov 27 17:43:39 2023: XCD main fifo: created main fifo '/tmp/xcdmain26fe62d0-1c05-4780-8509-e5ebee0906e1', fd read = 12
+Mon Nov 27 17:43:39 2023: Running Dispatch Server
+Mon Nov 27 17:43:39 2023: Version 2.2.0
+Mon Nov 27 17:43:46 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:43:46 2023: Starting Socket connection
+Mon Nov 27 17:43:46 2023: EXCHANGE_TOKEN received, server token: 26fe62d0-1c05-4780-8509-e5ebee0906e1, passed token: 26fe62d0-1c05-4780-8509-e5ebee0906e1
+Mon Nov 27 17:43:47 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:43:47 2023: SESSION_MGR: creating session with session uuid: '75fdfca9-b653-465e-a405-50e3472392d4' and name 'v++_package_krnl'
+Mon Nov 27 17:43:47 2023: KERNEL_SVC: creating session with uuid: '75fdfca9-b653-465e-a405-50e3472392d4' and name 'v++_package_krnl'
+Mon Nov 27 17:43:47 2023: GUIDANCE_SMGR: creating guidance session with uuid: '75fdfca9-b653-465e-a405-50e3472392d4' and name 'v++_package_krnl'
+Mon Nov 27 17:43:47 2023: SYSTEM_DIAGRAM: creating session with uuid: '75fdfca9-b653-465e-a405-50e3472392d4' and name 'v++_package_krnl'
+Mon Nov 27 17:43:54 2023: SESSION_MGR: closing session for UUID '75fdfca9-b653-465e-a405-50e3472392d4' with name 'v++_package_krnl'
+Mon Nov 27 17:43:54 2023: KERNEL_SVC: closing session for UUID '75fdfca9-b653-465e-a405-50e3472392d4' with name 'v++_package_krnl'
+Mon Nov 27 17:43:54 2023: GUIDANCE_SMGR: closing session for UUID '75fdfca9-b653-465e-a405-50e3472392d4' with name 'v++_package_krnl'
+Mon Nov 27 17:43:55 2023: SYSTEM_DIAGRAM: closing session for UUID '75fdfca9-b653-465e-a405-50e3472392d4' with name 'v++_package_krnl'
+Mon Nov 27 17:43:55 2023: STOP_SERVER received, server token: 26fe62d0-1c05-4780-8509-e5ebee0906e1, passed token: 26fe62d0-1c05-4780-8509-e5ebee0906e1
+Mon Nov 27 17:43:55 2023: Socket received request to stop server.
+Mon Nov 27 17:43:55 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:43:55 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:43:55 2023: XCD main fifo: Stopping
+Mon Nov 27 17:43:55 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:43:55 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:43:55 2023: SERVER: destructor for server bound to port 39325
+Mon Nov 27 17:43:55 2023: XCD main fifo: Good unlink of /tmp/xcdmain26fe62d0-1c05-4780-8509-e5ebee0906e1
+Mon Nov 27 17:43:55 2023: Server exiting with status 0.
+Mon Nov 27 17:43:55 2023: Closing log file.
+Mon Nov 27 17:57:43 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:57:43 2023: Server was asked to start on port: '45764'
+Mon Nov 27 17:57:43 2023: Server is using token UUID: 'bb54086e-6d77-47f7-b8f0-2cde24adc118'
+Mon Nov 27 17:57:43 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:57:43 2023: Attempting to start server on port '45764'
+Mon Nov 27 17:57:43 2023: XCD main fifo: created main fifo '/tmp/xcdmainbb54086e-6d77-47f7-b8f0-2cde24adc118', fd read = 12
+Mon Nov 27 17:57:43 2023: Running Dispatch Server
+Mon Nov 27 17:57:43 2023: Version 2.2.0
+Mon Nov 27 17:57:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:57:52 2023: Starting Socket connection
+Mon Nov 27 17:57:52 2023: EXCHANGE_TOKEN received, server token: bb54086e-6d77-47f7-b8f0-2cde24adc118, passed token: bb54086e-6d77-47f7-b8f0-2cde24adc118
+Mon Nov 27 17:57:52 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:57:52 2023: SESSION_MGR: creating session with session uuid: '47695e75-3c8f-496f-8d8a-5592be802603' and name 'v++_compile_krnl'
+Mon Nov 27 17:57:52 2023: KERNEL_SVC: creating session with uuid: '47695e75-3c8f-496f-8d8a-5592be802603' and name 'v++_compile_krnl'
+Mon Nov 27 17:57:52 2023: GUIDANCE_SMGR: creating guidance session with uuid: '47695e75-3c8f-496f-8d8a-5592be802603' and name 'v++_compile_krnl'
+Mon Nov 27 17:57:52 2023: SYSTEM_DIAGRAM: creating session with uuid: '47695e75-3c8f-496f-8d8a-5592be802603' and name 'v++_compile_krnl'
+Mon Nov 27 17:57:53 2023: SESSION_MGR: closing session for UUID '47695e75-3c8f-496f-8d8a-5592be802603' with name 'v++_compile_krnl'
+Mon Nov 27 17:57:53 2023: KERNEL_SVC: closing session for UUID '47695e75-3c8f-496f-8d8a-5592be802603' with name 'v++_compile_krnl'
+Mon Nov 27 17:57:53 2023: GUIDANCE_SMGR: closing session for UUID '47695e75-3c8f-496f-8d8a-5592be802603' with name 'v++_compile_krnl'
+Mon Nov 27 17:57:53 2023: SYSTEM_DIAGRAM: closing session for UUID '47695e75-3c8f-496f-8d8a-5592be802603' with name 'v++_compile_krnl'
+Mon Nov 27 17:57:53 2023: STOP_SERVER received, server token: bb54086e-6d77-47f7-b8f0-2cde24adc118, passed token: bb54086e-6d77-47f7-b8f0-2cde24adc118
+Mon Nov 27 17:57:53 2023: Socket received request to stop server.
+Mon Nov 27 17:57:53 2023: Dispatch Server: do_await_stop
+Mon Nov 27 17:57:53 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 17:57:53 2023: XCD main fifo: Stopping
+Mon Nov 27 17:57:53 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 17:57:53 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 17:57:53 2023: SERVER: destructor for server bound to port 45764
+Mon Nov 27 17:57:53 2023: XCD main fifo: Good unlink of /tmp/xcdmainbb54086e-6d77-47f7-b8f0-2cde24adc118
+Mon Nov 27 17:57:53 2023: Server exiting with status 0.
+Mon Nov 27 17:57:53 2023: Closing log file.
+Mon Nov 27 17:59:36 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 17:59:36 2023: Server was asked to start on port: '42170'
+Mon Nov 27 17:59:36 2023: Server is using token UUID: 'c1062efa-a060-4eb9-89dc-e4e51a1251f3'
+Mon Nov 27 17:59:36 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 17:59:36 2023: Attempting to start server on port '42170'
+Mon Nov 27 17:59:36 2023: XCD main fifo: created main fifo '/tmp/xcdmainc1062efa-a060-4eb9-89dc-e4e51a1251f3', fd read = 12
+Mon Nov 27 17:59:36 2023: Running Dispatch Server
+Mon Nov 27 17:59:36 2023: Version 2.2.0
+Mon Nov 27 17:59:44 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 17:59:44 2023: Starting Socket connection
+Mon Nov 27 17:59:44 2023: EXCHANGE_TOKEN received, server token: c1062efa-a060-4eb9-89dc-e4e51a1251f3, passed token: c1062efa-a060-4eb9-89dc-e4e51a1251f3
+Mon Nov 27 17:59:44 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 17:59:44 2023: SESSION_MGR: creating session with session uuid: '11295472-e09c-4a69-8d90-2e7a8480a6ad' and name 'v++_compile_krnl'
+Mon Nov 27 17:59:44 2023: KERNEL_SVC: creating session with uuid: '11295472-e09c-4a69-8d90-2e7a8480a6ad' and name 'v++_compile_krnl'
+Mon Nov 27 17:59:44 2023: GUIDANCE_SMGR: creating guidance session with uuid: '11295472-e09c-4a69-8d90-2e7a8480a6ad' and name 'v++_compile_krnl'
+Mon Nov 27 17:59:44 2023: SYSTEM_DIAGRAM: creating session with uuid: '11295472-e09c-4a69-8d90-2e7a8480a6ad' and name 'v++_compile_krnl'
+Mon Nov 27 18:00:00 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:00:00 2023: Starting Socket connection
+Mon Nov 27 18:01:18 2023: SESSION_MGR: closing session for UUID '11295472-e09c-4a69-8d90-2e7a8480a6ad' with name 'v++_compile_krnl'
+Mon Nov 27 18:01:18 2023: KERNEL_SVC: closing session for UUID '11295472-e09c-4a69-8d90-2e7a8480a6ad' with name 'v++_compile_krnl'
+Mon Nov 27 18:01:18 2023: GUIDANCE_SMGR: closing session for UUID '11295472-e09c-4a69-8d90-2e7a8480a6ad' with name 'v++_compile_krnl'
+Mon Nov 27 18:01:18 2023: SYSTEM_DIAGRAM: closing session for UUID '11295472-e09c-4a69-8d90-2e7a8480a6ad' with name 'v++_compile_krnl'
+Mon Nov 27 18:01:18 2023: STOP_SERVER received, server token: c1062efa-a060-4eb9-89dc-e4e51a1251f3, passed token: c1062efa-a060-4eb9-89dc-e4e51a1251f3
+Mon Nov 27 18:01:18 2023: Socket received request to stop server.
+Mon Nov 27 18:01:18 2023: Dispatch Server: do_await_stop
+Mon Nov 27 18:01:18 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 18:01:18 2023: XCD main fifo: Stopping
+Mon Nov 27 18:01:18 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 18:01:18 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 18:01:18 2023: SERVER: destructor for server bound to port 42170
+Mon Nov 27 18:01:18 2023: XCD main fifo: Good unlink of /tmp/xcdmainc1062efa-a060-4eb9-89dc-e4e51a1251f3
+Mon Nov 27 18:01:18 2023: Server exiting with status 0.
+Mon Nov 27 18:01:18 2023: Closing log file.
+Mon Nov 27 18:01:24 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 18:01:24 2023: Server was asked to start on port: '32860'
+Mon Nov 27 18:01:24 2023: Server is using token UUID: '2ca9fccc-5d54-466e-ae48-194290bba1f6'
+Mon Nov 27 18:01:24 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 18:01:24 2023: Attempting to start server on port '32860'
+Mon Nov 27 18:01:24 2023: XCD main fifo: created main fifo '/tmp/xcdmain2ca9fccc-5d54-466e-ae48-194290bba1f6', fd read = 12
+Mon Nov 27 18:01:24 2023: Running Dispatch Server
+Mon Nov 27 18:01:24 2023: Version 2.2.0
+Mon Nov 27 18:01:31 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:01:31 2023: Starting Socket connection
+Mon Nov 27 18:01:31 2023: EXCHANGE_TOKEN received, server token: 2ca9fccc-5d54-466e-ae48-194290bba1f6, passed token: 2ca9fccc-5d54-466e-ae48-194290bba1f6
+Mon Nov 27 18:01:32 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 18:01:32 2023: SESSION_MGR: creating session with session uuid: '61910545-76a7-4907-956d-0647a8ca62ed' and name 'v++_link_krnl.link'
+Mon Nov 27 18:01:32 2023: KERNEL_SVC: creating session with uuid: '61910545-76a7-4907-956d-0647a8ca62ed' and name 'v++_link_krnl.link'
+Mon Nov 27 18:01:32 2023: GUIDANCE_SMGR: creating guidance session with uuid: '61910545-76a7-4907-956d-0647a8ca62ed' and name 'v++_link_krnl.link'
+Mon Nov 27 18:01:32 2023: SYSTEM_DIAGRAM: creating session with uuid: '61910545-76a7-4907-956d-0647a8ca62ed' and name 'v++_link_krnl.link'
+Mon Nov 27 18:02:14 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:02:14 2023: Starting Socket connection
+Mon Nov 27 18:02:31 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:02:31 2023: Starting Socket connection
+Mon Nov 27 18:06:26 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:26 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:06:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:06:27 2023: Starting Socket connection
+Mon Nov 27 18:08:06 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:06 2023: Starting Socket connection
+Mon Nov 27 18:08:06 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:06 2023: Starting Socket connection
+Mon Nov 27 18:08:07 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:07 2023: Starting Socket connection
+Mon Nov 27 18:08:08 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:08 2023: Starting Socket connection
+Mon Nov 27 18:08:10 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:10 2023: Starting Socket connection
+Mon Nov 27 18:08:11 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:11 2023: Starting Socket connection
+Mon Nov 27 18:08:13 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:13 2023: Starting Socket connection
+Mon Nov 27 18:08:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:08:16 2023: Starting Socket connection
+Mon Nov 27 18:09:47 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:47 2023: Starting Socket connection
+Mon Nov 27 18:09:48 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:48 2023: Starting Socket connection
+Mon Nov 27 18:09:48 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:48 2023: Starting Socket connection
+Mon Nov 27 18:09:48 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:48 2023: Starting Socket connection
+Mon Nov 27 18:09:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:51 2023: Starting Socket connection
+Mon Nov 27 18:09:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:09:52 2023: Starting Socket connection
+Mon Nov 27 18:10:09 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:10:09 2023: Starting Socket connection
+Mon Nov 27 18:11:19 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:19 2023: Starting Socket connection
+Mon Nov 27 18:11:22 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:22 2023: Starting Socket connection
+Mon Nov 27 18:11:25 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:25 2023: Starting Socket connection
+Mon Nov 27 18:11:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:27 2023: Starting Socket connection
+Mon Nov 27 18:11:28 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:28 2023: Starting Socket connection
+Mon Nov 27 18:11:32 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:32 2023: Starting Socket connection
+Mon Nov 27 18:11:49 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:49 2023: Starting Socket connection
+Mon Nov 27 18:11:53 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:53 2023: Starting Socket connection
+Mon Nov 27 18:11:55 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:11:55 2023: Starting Socket connection
+Mon Nov 27 18:12:55 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:12:55 2023: Starting Socket connection
+Mon Nov 27 18:12:56 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:12:56 2023: Starting Socket connection
+Mon Nov 27 18:13:05 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:05 2023: Starting Socket connection
+Mon Nov 27 18:13:05 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:05 2023: Starting Socket connection
+Mon Nov 27 18:13:12 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:12 2023: Starting Socket connection
+Mon Nov 27 18:13:26 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:26 2023: Starting Socket connection
+Mon Nov 27 18:13:31 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:31 2023: Starting Socket connection
+Mon Nov 27 18:13:33 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:13:33 2023: Starting Socket connection
+Mon Nov 27 18:14:35 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:14:35 2023: Starting Socket connection
+Mon Nov 27 18:14:40 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:14:40 2023: Starting Socket connection
+Mon Nov 27 18:14:44 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:14:44 2023: Starting Socket connection
+Mon Nov 27 18:14:47 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:14:47 2023: Starting Socket connection
+Mon Nov 27 18:14:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:14:51 2023: Starting Socket connection
+Mon Nov 27 18:15:02 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:15:02 2023: Starting Socket connection
+Mon Nov 27 18:15:14 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:15:14 2023: Starting Socket connection
+Mon Nov 27 18:15:15 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:15:15 2023: Starting Socket connection
+Mon Nov 27 18:16:13 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:13 2023: Starting Socket connection
+Mon Nov 27 18:16:24 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:24 2023: Starting Socket connection
+Mon Nov 27 18:16:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:27 2023: Starting Socket connection
+Mon Nov 27 18:16:30 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:30 2023: Starting Socket connection
+Mon Nov 27 18:16:33 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:33 2023: Starting Socket connection
+Mon Nov 27 18:16:40 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:40 2023: Starting Socket connection
+Mon Nov 27 18:16:54 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:54 2023: Starting Socket connection
+Mon Nov 27 18:16:56 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:16:56 2023: Starting Socket connection
+Mon Nov 27 18:17:59 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:17:59 2023: Starting Socket connection
+Mon Nov 27 18:18:05 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:05 2023: Starting Socket connection
+Mon Nov 27 18:18:12 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:12 2023: Starting Socket connection
+Mon Nov 27 18:18:13 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:13 2023: Starting Socket connection
+Mon Nov 27 18:18:20 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:20 2023: Starting Socket connection
+Mon Nov 27 18:18:36 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:36 2023: Starting Socket connection
+Mon Nov 27 18:18:36 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:36 2023: Starting Socket connection
+Mon Nov 27 18:18:41 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:41 2023: Starting Socket connection
+Mon Nov 27 18:18:59 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:18:59 2023: Starting Socket connection
+Mon Nov 27 18:19:05 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:05 2023: Starting Socket connection
+Mon Nov 27 18:19:05 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:05 2023: Starting Socket connection
+Mon Nov 27 18:19:34 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:34 2023: Starting Socket connection
+Mon Nov 27 18:19:34 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:34 2023: Starting Socket connection
+Mon Nov 27 18:19:40 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:40 2023: Starting Socket connection
+Mon Nov 27 18:19:50 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:50 2023: Starting Socket connection
+Mon Nov 27 18:19:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:51 2023: Starting Socket connection
+Mon Nov 27 18:19:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:19:52 2023: Starting Socket connection
+Mon Nov 27 18:20:03 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:03 2023: Starting Socket connection
+Mon Nov 27 18:20:04 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:04 2023: Starting Socket connection
+Mon Nov 27 18:20:10 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:10 2023: Starting Socket connection
+Mon Nov 27 18:20:19 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:19 2023: Starting Socket connection
+Mon Nov 27 18:20:21 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:21 2023: Starting Socket connection
+Mon Nov 27 18:20:35 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:35 2023: Starting Socket connection
+Mon Nov 27 18:20:50 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:50 2023: Starting Socket connection
+Mon Nov 27 18:20:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:20:52 2023: Starting Socket connection
+Mon Nov 27 18:21:03 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:03 2023: Starting Socket connection
+Mon Nov 27 18:21:24 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:24 2023: Starting Socket connection
+Mon Nov 27 18:21:32 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:32 2023: Starting Socket connection
+Mon Nov 27 18:21:33 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:33 2023: Starting Socket connection
+Mon Nov 27 18:21:46 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:46 2023: Starting Socket connection
+Mon Nov 27 18:21:46 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:46 2023: Starting Socket connection
+Mon Nov 27 18:21:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:51 2023: Starting Socket connection
+Mon Nov 27 18:21:54 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:21:54 2023: Starting Socket connection
+Mon Nov 27 18:22:00 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:00 2023: Starting Socket connection
+Mon Nov 27 18:22:02 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:02 2023: Starting Socket connection
+Mon Nov 27 18:22:15 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:15 2023: Starting Socket connection
+Mon Nov 27 18:22:21 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:21 2023: Starting Socket connection
+Mon Nov 27 18:22:24 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:24 2023: Starting Socket connection
+Mon Nov 27 18:22:28 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:28 2023: Starting Socket connection
+Mon Nov 27 18:22:45 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:45 2023: Starting Socket connection
+Mon Nov 27 18:22:47 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:47 2023: Starting Socket connection
+Mon Nov 27 18:22:49 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:49 2023: Starting Socket connection
+Mon Nov 27 18:22:53 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:22:53 2023: Starting Socket connection
+Mon Nov 27 18:23:02 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:02 2023: Starting Socket connection
+Mon Nov 27 18:23:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:16 2023: Starting Socket connection
+Mon Nov 27 18:23:18 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:18 2023: Starting Socket connection
+Mon Nov 27 18:23:22 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:22 2023: Starting Socket connection
+Mon Nov 27 18:23:34 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:34 2023: Starting Socket connection
+Mon Nov 27 18:23:45 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:45 2023: Starting Socket connection
+Mon Nov 27 18:23:46 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:46 2023: Starting Socket connection
+Mon Nov 27 18:23:47 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:47 2023: Starting Socket connection
+Mon Nov 27 18:23:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:52 2023: Starting Socket connection
+Mon Nov 27 18:23:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:23:52 2023: Starting Socket connection
+Mon Nov 27 18:24:04 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:04 2023: Starting Socket connection
+Mon Nov 27 18:24:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:16 2023: Starting Socket connection
+Mon Nov 27 18:24:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:16 2023: Starting Socket connection
+Mon Nov 27 18:24:17 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:17 2023: Starting Socket connection
+Mon Nov 27 18:24:20 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:20 2023: Starting Socket connection
+Mon Nov 27 18:24:43 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:43 2023: Starting Socket connection
+Mon Nov 27 18:24:45 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:24:45 2023: Starting Socket connection
+Mon Nov 27 18:25:33 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:25:33 2023: Starting Socket connection
+Mon Nov 27 18:25:37 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:25:37 2023: Starting Socket connection
+Mon Nov 27 18:25:38 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:25:38 2023: Starting Socket connection
+Mon Nov 27 18:25:59 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:25:59 2023: Starting Socket connection
+Mon Nov 27 18:26:09 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:09 2023: Starting Socket connection
+Mon Nov 27 18:26:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:16 2023: Starting Socket connection
+Mon Nov 27 18:26:24 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:24 2023: Starting Socket connection
+Mon Nov 27 18:26:29 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:29 2023: Starting Socket connection
+Mon Nov 27 18:26:29 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:29 2023: Starting Socket connection
+Mon Nov 27 18:26:39 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:39 2023: Starting Socket connection
+Mon Nov 27 18:26:45 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:45 2023: Starting Socket connection
+Mon Nov 27 18:26:55 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:26:55 2023: Starting Socket connection
+Mon Nov 27 18:27:00 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:00 2023: Starting Socket connection
+Mon Nov 27 18:27:07 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:07 2023: Starting Socket connection
+Mon Nov 27 18:27:14 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:14 2023: Starting Socket connection
+Mon Nov 27 18:27:14 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:14 2023: Starting Socket connection
+Mon Nov 27 18:27:18 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:18 2023: Starting Socket connection
+Mon Nov 27 18:27:23 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:23 2023: Starting Socket connection
+Mon Nov 27 18:27:26 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:26 2023: Starting Socket connection
+Mon Nov 27 18:27:31 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:31 2023: Starting Socket connection
+Mon Nov 27 18:27:36 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:36 2023: Starting Socket connection
+Mon Nov 27 18:27:43 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:43 2023: Starting Socket connection
+Mon Nov 27 18:27:43 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:43 2023: Starting Socket connection
+Mon Nov 27 18:27:47 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:47 2023: Starting Socket connection
+Mon Nov 27 18:27:53 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:53 2023: Starting Socket connection
+Mon Nov 27 18:27:53 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:27:53 2023: Starting Socket connection
+Mon Nov 27 18:28:02 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:02 2023: Starting Socket connection
+Mon Nov 27 18:28:07 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:07 2023: Starting Socket connection
+Mon Nov 27 18:28:12 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:12 2023: Starting Socket connection
+Mon Nov 27 18:28:13 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:13 2023: Starting Socket connection
+Mon Nov 27 18:28:16 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:16 2023: Starting Socket connection
+Mon Nov 27 18:28:21 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:21 2023: Starting Socket connection
+Mon Nov 27 18:28:21 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:21 2023: Starting Socket connection
+Mon Nov 27 18:28:31 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:31 2023: Starting Socket connection
+Mon Nov 27 18:28:37 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:37 2023: Starting Socket connection
+Mon Nov 27 18:28:41 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:41 2023: Starting Socket connection
+Mon Nov 27 18:28:41 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:41 2023: Starting Socket connection
+Mon Nov 27 18:28:45 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:45 2023: Starting Socket connection
+Mon Nov 27 18:28:50 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:50 2023: Starting Socket connection
+Mon Nov 27 18:28:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:51 2023: Starting Socket connection
+Mon Nov 27 18:28:51 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:28:51 2023: Starting Socket connection
+Mon Nov 27 18:29:00 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:29:00 2023: Starting Socket connection
+Mon Nov 27 18:29:06 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:29:06 2023: Starting Socket connection
+Mon Nov 27 18:29:09 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:29:09 2023: Starting Socket connection
+Mon Nov 27 18:29:10 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:29:10 2023: Starting Socket connection
+Mon Nov 27 18:30:27 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:27 2023: Starting Socket connection
+Mon Nov 27 18:30:40 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:40 2023: Starting Socket connection
+Mon Nov 27 18:30:44 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:44 2023: Starting Socket connection
+Mon Nov 27 18:30:49 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:49 2023: Starting Socket connection
+Mon Nov 27 18:30:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:52 2023: Starting Socket connection
+Mon Nov 27 18:30:59 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:30:59 2023: Starting Socket connection
+Mon Nov 27 18:31:08 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:31:08 2023: Starting Socket connection
+Mon Nov 27 18:31:14 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:31:14 2023: Starting Socket connection
+Mon Nov 27 18:32:20 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:32:20 2023: Starting Socket connection
+Mon Nov 27 18:32:22 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:32:22 2023: Starting Socket connection
+Mon Nov 27 18:32:52 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:32:52 2023: Starting Socket connection
+Mon Nov 27 18:32:53 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:32:53 2023: Starting Socket connection
+Mon Nov 27 18:32:54 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:32:54 2023: Starting Socket connection
+Mon Nov 27 18:33:24 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:33:24 2023: Starting Socket connection
+Mon Nov 27 18:35:40 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 18:35:40 2023: Starting Socket connection
+Mon Nov 27 20:54:12 2023: SESSION_MGR: closing session for UUID '61910545-76a7-4907-956d-0647a8ca62ed' with name 'v++_link_krnl.link'
+Mon Nov 27 20:54:12 2023: KERNEL_SVC: closing session for UUID '61910545-76a7-4907-956d-0647a8ca62ed' with name 'v++_link_krnl.link'
+Mon Nov 27 20:54:12 2023: GUIDANCE_SMGR: closing session for UUID '61910545-76a7-4907-956d-0647a8ca62ed' with name 'v++_link_krnl.link'
+Mon Nov 27 20:54:12 2023: SYSTEM_DIAGRAM: closing session for UUID '61910545-76a7-4907-956d-0647a8ca62ed' with name 'v++_link_krnl.link'
+Mon Nov 27 20:54:12 2023: STOP_SERVER received, server token: 2ca9fccc-5d54-466e-ae48-194290bba1f6, passed token: 2ca9fccc-5d54-466e-ae48-194290bba1f6
+Mon Nov 27 20:54:12 2023: DISPATCH_HANDLER: 2 connections are active. Stop request denied.
+Mon Nov 27 20:54:27 2023: Running xcd server. This server was built by gradle.
+Mon Nov 27 20:54:27 2023: Server was asked to start on port: '37195'
+Mon Nov 27 20:54:27 2023: Server is using token UUID: 'be38f162-deb9-4714-8843-941707c23117'
+Mon Nov 27 20:54:27 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Mon Nov 27 20:54:27 2023: Attempting to start server on port '37195'
+Mon Nov 27 20:54:27 2023: XCD main fifo: created main fifo '/tmp/xcdmainbe38f162-deb9-4714-8843-941707c23117', fd read = 12
+Mon Nov 27 20:54:27 2023: Running Dispatch Server
+Mon Nov 27 20:54:27 2023: Version 2.2.0
+Mon Nov 27 20:54:35 2023: Dispatch Server: Accepted socket connection from client
+Mon Nov 27 20:54:35 2023: Starting Socket connection
+Mon Nov 27 20:54:35 2023: EXCHANGE_TOKEN received, server token: be38f162-deb9-4714-8843-941707c23117, passed token: be38f162-deb9-4714-8843-941707c23117
+Mon Nov 27 20:54:35 2023: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Mon Nov 27 20:54:35 2023: SESSION_MGR: creating session with session uuid: 'b561b71c-36ef-4e83-a7b6-f890e012a629' and name 'v++_package_krnl'
+Mon Nov 27 20:54:35 2023: KERNEL_SVC: creating session with uuid: 'b561b71c-36ef-4e83-a7b6-f890e012a629' and name 'v++_package_krnl'
+Mon Nov 27 20:54:35 2023: GUIDANCE_SMGR: creating guidance session with uuid: 'b561b71c-36ef-4e83-a7b6-f890e012a629' and name 'v++_package_krnl'
+Mon Nov 27 20:54:35 2023: SYSTEM_DIAGRAM: creating session with uuid: 'b561b71c-36ef-4e83-a7b6-f890e012a629' and name 'v++_package_krnl'
+Mon Nov 27 20:54:40 2023: SESSION_MGR: closing session for UUID 'b561b71c-36ef-4e83-a7b6-f890e012a629' with name 'v++_package_krnl'
+Mon Nov 27 20:54:40 2023: KERNEL_SVC: closing session for UUID 'b561b71c-36ef-4e83-a7b6-f890e012a629' with name 'v++_package_krnl'
+Mon Nov 27 20:54:40 2023: GUIDANCE_SMGR: closing session for UUID 'b561b71c-36ef-4e83-a7b6-f890e012a629' with name 'v++_package_krnl'
+Mon Nov 27 20:54:41 2023: SYSTEM_DIAGRAM: closing session for UUID 'b561b71c-36ef-4e83-a7b6-f890e012a629' with name 'v++_package_krnl'
+Mon Nov 27 20:54:41 2023: STOP_SERVER received, server token: be38f162-deb9-4714-8843-941707c23117, passed token: be38f162-deb9-4714-8843-941707c23117
+Mon Nov 27 20:54:41 2023: Socket received request to stop server.
+Mon Nov 27 20:54:41 2023: Dispatch Server: do_await_stop
+Mon Nov 27 20:54:41 2023: Dispatch Server: stopping mainFifo_
+Mon Nov 27 20:54:41 2023: XCD main fifo: Stopping
+Mon Nov 27 20:54:41 2023: XCD main fifo: do_read error code: Operation canceled
+Mon Nov 27 20:54:41 2023: XCD main fifo: bytes_transferred: 0
+Mon Nov 27 20:54:41 2023: SERVER: destructor for server bound to port 37195
+Mon Nov 27 20:54:41 2023: XCD main fifo: Good unlink of /tmp/xcdmainbe38f162-deb9-4714-8843-941707c23117
+Mon Nov 27 20:54:41 2023: Server exiting with status 0.
+Mon Nov 27 20:54:41 2023: Closing log file.

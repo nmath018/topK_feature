@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "topKQueryScores:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/nmath018\/topK_feature\/hls_catch22\/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/nmath018\/topK_feature\/hls_catch22\/_x.hw_emu.xilinx_u250_gen3x16_xdma_4_1_202210_1\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

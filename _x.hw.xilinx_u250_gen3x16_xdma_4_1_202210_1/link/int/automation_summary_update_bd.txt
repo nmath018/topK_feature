@@ -1,0 +1,56 @@
+====================================================================
+Version:    xcd v2022.2 (64-bit)
+Copyright:  Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Created:    Mon Nov 27 18:03:22 2023
+====================================================================
+
+1. Kernel and compute unit information
+======================================
+
+Compute Unit: topKQueryScores_1
+Kernel: topKQueryScores
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+2. Interface Connections
+========================
+
+IP to Compute Unit
+------------------
+Source Pin: ict_axi_ctrl_user_01/M01_AXI
+Destination Pin: topKQueryScores_1/s_axi_control
+
+Compute Unit to IP
+------------------
+Source Pin: topKQueryScores_1/m_axi_gmem
+Destination Pin: memory_subsystem/S04_AXI
+
+3. Clock Connections
+====================
+
+Compute Unit: topKQueryScores_1
+Clock ID: 0
+Platform Clock Frequency: 300.000000 MHz
+Source Pin: ss_ucs/aclk_kernel_00
+Destination Pin: topKQueryScores_1/ap_clk
+
+Clock Instance: ss_ucs
+Source Pin: ii_level1_wire/ulp_m_aclk_ctrl_00
+Destination Pin: ss_ucs/aclk_ctrl
+
+Clock Instance: ss_ucs
+Source Pin: ii_level1_wire/ulp_m_aclk_freerun_ref_00
+Destination Pin: ss_ucs/aclk_freerun
+
+Clock Instance: ss_ucs
+Source Pin: ii_level1_wire/ulp_m_aclk_pcie_user_00
+Destination Pin: ss_ucs/aclk_pcie
+
+4. Reset Connections
+====================
+
+Compute Unit: topKQueryScores_1
+Source Pin: ip_psr_aresetn_kernel_00_slr1/peripheral_aresetn
+Destination Pin: topKQueryScores_1/ap_rst_n
+Associated Clock Pin: topKQueryScores_1/ap_clk
+
